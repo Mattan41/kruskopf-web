@@ -10,6 +10,10 @@
           <a href="https://5eCombatEncounter.kruskopf.org" target="_blank" class="project-link"> 5e Combat Encounter Builder</a>
           This application is a school project designed as an encounter builder for Dungeons & Dragons 5th Edition. It utilizes the <a href="https://open5e.com/api-docs" target="_blank" class="custom-link">Open5e API</a> to fetch monster data. The current functionality includes listing a handful of monsters and adding them to a combat list, and optionally create your own monster and add to combat. Combat list is stored in local storage. Future development plans include extending the functionality to allow searching and filtering monsters, as well as saving monsters to a favorites list.
         </li>
+        <li>
+          <a href="https://topflicks.kruskopf.org/" target="_blank" class="project-link"> Top Flicks</a>
+          Top Flicks is a school project web application built with HTML, CSS, and JavaScript for browsing and managing your favorite movies. Users can register, log in, search for movies, and add them to their favorites.
+        </li>
       </ol>
 
     </div>
