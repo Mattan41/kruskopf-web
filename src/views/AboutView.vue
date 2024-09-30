@@ -1,36 +1,12 @@
 <template>
-  <div class="about">
-    <h1>About Me</h1>
-    <h3> This is some information about me: </h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="about flex flex-col items-center justify-center h-screen text-center">
+    <h1 class="text-2xl mb-4">About Me</h1>
+    <h3 class="text-xl mb-4"> This is some information about me: </h3>
+    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 </template>
 
-<style>
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.about h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  font-size: 1.2rem;
-}
-
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
