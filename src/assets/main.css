@@ -1,4 +1,31 @@
 @import './base.css';
+@keyframes bouncing-banner {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align:left;
+    font-style: normal;
+    color: #3498db;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align:left;
+  font-style: normal;
+  color: #3498db;
+}
 
 #app {
   max-width: 1280px;
