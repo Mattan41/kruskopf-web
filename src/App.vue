@@ -7,8 +7,8 @@ import HomePage from "@/components/HomePage.vue";
   <header>
     <img alt="Mats logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/">My projects</RouterLink>
+      <RouterLink to="/about">About me</RouterLink>
     </nav>
     <div class="wrapper">
       <HomePage msg="Welcome!" />
