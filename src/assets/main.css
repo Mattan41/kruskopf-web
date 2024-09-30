@@ -7,13 +7,6 @@
   font-weight: normal;
 }
 
-a,
-.blue {
-  text-decoration: none;
-  color: hsl(196, 95%, 49%);
-  transition: 0.4s;
-  padding: 3px;
-}
 
 @media (hover: hover) {
   a:hover {
