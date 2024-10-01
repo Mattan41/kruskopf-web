@@ -27,7 +27,6 @@ import HomePage from "@/components/HomePage.vue";
   background-color: white;
   border-radius: 50%;
 }
-
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
