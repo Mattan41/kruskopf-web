@@ -14,6 +14,13 @@
         {{ repoName }}
       </a>
     </h4>
+    <div v-if="otherLink">
+      <h4>External Resource:
+        <a :href="otherLink" target="_blank" class="custom-link text-green-700 italic no-underline">
+          {{ otherLink }}
+        </a>
+      </h4>
+    </div>
     <RouterLink to="/projects"
                 class="back-button text-blue-500 no-underline rounded border border-blue-500 hover:bg-blue-500 hover:text-white">
       Back to Projects
@@ -22,7 +29,7 @@
 </template>
 
 <script setup>
-defineProps(['id', 'title', 'description', 'link', 'repoLink', 'repoName']);
+defineProps(['id', 'title', 'description', 'link', 'repoLink', 'repoName', 'otherLink']);
 </script>
 <style>
 @media (min-width: 1024px) {
