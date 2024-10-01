@@ -10,9 +10,9 @@ import HomePage from "@/components/HomePage.vue";
       <HomePage msg="Welcome!" />
 
       <nav class="w-full text-center mt-8 text-sm lg:text-left lg:ml-[-1rem] lg:text-base lg:py-4 lg:mt-0 lg:w-auto">
-        <RouterLink to="/" class="inline-block px-4 py-2 border-b-2 border-transparent hover:border-blue-500">Home</RouterLink>
-        <RouterLink to="/about" class="inline-block px-4 py-2 border-b-2 border-transparent hover:border-blue-500">About me</RouterLink>
-        <RouterLink to="/projects" class="inline-block px-4 py-2 border-b-2 border-transparent hover:border-blue-500">Projects</RouterLink>
+        <RouterLink to="/" class="inline-block px-4 py-2 hover:border-blue-500">Home</RouterLink>
+        <RouterLink to="/about" class="inline-block px-4 py-2 hover:border-blue-500">About me</RouterLink>
+        <RouterLink to="/projects" class="inline-block px-4 py-2 hover:border-blue-500">Projects</RouterLink>
       </nav>
     </div>
   </header>
@@ -29,26 +29,12 @@ import HomePage from "@/components/HomePage.vue";
 }
 
 nav a {
-
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
 nav a:first-of-type {
   border: 0;
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
 }
 
 
