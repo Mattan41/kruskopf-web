@@ -27,10 +27,12 @@ import HomePage from "@/components/HomePage.vue";
   background-color: white;
   border-radius: 50%;
 }
-
 nav a {
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
 }
 
 nav a:first-of-type {
