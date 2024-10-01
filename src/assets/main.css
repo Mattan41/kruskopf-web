@@ -19,6 +19,14 @@ h1{
     color: #3498db;
 }
 
+h2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align:left;
+    font-style: normal;
+    color: #3498db;
+}
+
 h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
