@@ -18,12 +18,13 @@ const projects = ref([
     title: "5e Combat Encounter Builder",
     link: "https://5eCombatEncounter.kruskopf.org",
     description: "This application is a school project designed as an encounter builder for Dungeons & Dragons 5th Edition. " +
-        "It utilizes the Open5e API to fetch monster data. The current functionality includes listing a handful of monsters " +
-        "and adding them to a combat list, and optionally create your own monster and add to combat. Combat list is stored in " +
-        "local storage. Future development plans include extending the functionality to allow searching and filtering monsters, " +
+        "It utilizes the Open5e API " +
+        "The current functionality includes listing a handful of monsters and adding them to a combat list, and optionally create your own monster and add to combat. " +
+        "Combat list is stored in local storage. Future development plans include extending the functionality to allow searching and filtering monsters, " +
         "as well as saving monsters to a favorites list.",
     repoLink: "https://github.com/Mattan41/vue-labb2",
-    repoName: "vue-labb2"
+    repoName: "5eEncounterBuilder",
+    otherLink: "https://open5e.com/api-docs"
   },
   {
     id: 2,
