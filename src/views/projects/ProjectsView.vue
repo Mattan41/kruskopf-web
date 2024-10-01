@@ -1,9 +1,9 @@
 <template>
-  <div class="projects">
-    <h1>This is my projects</h1>
-    <div v-for="project in projects" :key="project.id">
-      <RouterLink :to="{ name: 'projectdetails', params: project }">
-        <h2>{{ project.title }}</h2>
+  <div class="projects p-4">
+    <h2 class="text-3xl font-bold text-blue-600 mb-6">My Projects:</h2>
+    <div v-for="project in projects" :key="project.id" class="mb-6">
+      <RouterLink :to="{ name: 'projectdetails', params: project }" class="text-blue-500 hover:underline">
+        <h3 class="text-xl font-semibold">{{ project.title }}</h3>
       </RouterLink>
     </div>
   </div>
@@ -15,7 +15,7 @@ import { ref } from 'vue';
 const projects = ref([
   {
     id: 1,
-    title: "5e Combat Encounter Builder",
+    title: "5e Encounter Builder",
     link: "https://5eCombatEncounter.kruskopf.org",
     description: "This application is a school project designed as an encounter builder for Dungeons & Dragons 5th Edition. " +
         "It utilizes the Open5e API " +
