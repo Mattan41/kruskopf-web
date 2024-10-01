@@ -1,9 +1,12 @@
 <template>
   <div class="projectDetails">
-    <h2><a :href="link" target="_blank"
-           class="project-link text-blue-500 no-underline rounded border border-blue-500 hover:bg-blue-500 hover:text-white">
-      {{ title }}
-    </a></h2>
+    <h2 v-if="link.includes('#')">{{ title }}</h2>
+    <h2 v-else>
+      <a :href="link" target="_blank"
+         class="project-link text-blue-500 no-underline rounded border border-blue-500 hover:bg-blue-500 hover:text-white">
+        {{ title }}
+      </a>
+    </h2>
 
     <p>{{ "Description: " + description }}</p>
     <h4>Link to github repo:

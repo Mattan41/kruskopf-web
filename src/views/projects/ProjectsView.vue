@@ -2,9 +2,9 @@
   <div class="projects">
     <h1>This is my projects</h1>
     <div v-for="project in projects" :key="project.id">
-     <RouterLink :to="{ name: 'projectdetails', params: { id: project.id, title: project.title, description: project.description, link: project.link, repoLink: project.repoLink, repoName: project.repoName } }">
-  <h2>{{ project.title }}</h2>
-</RouterLink>
+      <RouterLink :to="{ name: 'projectdetails', params: project }">
+        <h2>{{ project.title }}</h2>
+      </RouterLink>
     </div>
   </div>
 </template>
