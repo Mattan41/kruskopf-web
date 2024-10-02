@@ -70,6 +70,18 @@ const projects = ref([
         "The application includes a simple command-line interface for user input and output.",
     repoLink: "https://github.com/Mattan41/SPI-unitconverter",
     repoName: "SPI-unitconverter"
+  },
+  {
+    id: 6,
+    title: "Jakarta Project with WildFly",
+    link: "#",
+    shortDescription: "A Java-based Jakarta EE application running on WildFly, utilizing Maven, Docker, and Testcontainers.",
+    description: "This project is a Java-based application built with Jakarta EE and running on the WildFly application server. " +
+        "It uses Maven for dependency management and build automation. " +
+        "The application includes comprehensive integration tests using Testcontainers and RestAssured to ensure robust and reliable functionality. " +
+        "Docker and Docker Compose are used to containerize the application and manage multi-container setups.",
+    repoLink: "https://github.com/Mattan41/projektJakarta",
+    repoName: "JakartaProject"
   }
 ]);
 </script>
