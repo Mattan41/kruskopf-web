@@ -75,9 +75,8 @@ const projects = ref([
     id: 6,
     title: "Jakarta Project with WildFly",
     link: "#",
-    shortDescription: "A Java-based Jakarta EE application running on WildFly, utilizing Maven, Docker, and Testcontainers.",
+    shortDescription: "Restful Web Service Implementation with JAX-RS, Jakarta EE, and WildFly.",
     description: "This project is a Java-based application built with Jakarta EE and running on the WildFly application server. " +
-        "It uses Maven for dependency management and build automation. " +
         "The application includes comprehensive integration tests using Testcontainers and RestAssured to ensure robust and reliable functionality. " +
         "Docker and Docker Compose are used to containerize the application and manage multi-container setups.",
     repoLink: "https://github.com/Mattan41/projektJakarta",
