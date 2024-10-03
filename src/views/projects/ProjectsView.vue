@@ -1,6 +1,7 @@
 <template>
   <div class="projects p-4">
-    <div v-for="project in projects" :key="project.id" class="project-card mb-6 p-4 border rounded hover:shadow-lg transition-shadow duration-300">
+    <div v-for="project in projects" :key="project.id"
+         class="project-card mb-6 p-4 border rounded hover:shadow-lg transition-shadow duration-300">
       <RouterLink :to="{ name: 'projectdetails', params: project }" class="text-blue-500 hover:underline">
         <h3 class="text-xl font-semibold">{{ project.title }}</h3>
       </RouterLink>
@@ -9,7 +10,7 @@
   </div>
 </template>
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const projects = ref([
   {
@@ -49,10 +50,13 @@ const projects = ref([
   },
   {
     id: 4,
-    title: "Spring boot application",
+    title: "Spring boot application for messaging",
     link: "#",
     shortDescription: "A web-based messaging platform built using Java, Spring Boot, and Thymeleaf.",
-    description: "A group project I participated in, where we built a web-based messaging platform built using Java, Spring Boot, and Thymeleaf. It allows users to create, edit, and view messages. The application supports user authentication and authorization, message translation, and provides a user-friendly interface for managing messages. It uses a MySQL database for data storage and integrates with various Spring Boot starters for functionality such as data access, security, and validation. The project is managed using Maven and includes dependencies for testing, web development, and API documentation. Additionally, there is a branch named mats-update-messages-with-htmx that updates messages using HTMX.",
+    description: "A group project I participated in, where we built a web-based messaging platform built using Java, Spring Boot, and Thymeleaf. " +
+        "It allows users to create, edit, and view messages. The application supports user authentication and authorization, message translation, " +
+        "and provides a user-friendly interface for managing messages. It uses a MySQL database for data storage and integrates with various " +
+        "Spring Boot starters for functionality such as data access, security, and validation. Additionally, there is a branch updates messages using HTMX.",
     repoLink: "https://github.com/Mattan41/springBootGroupProject",
     repoName: "springBootGroupProject"
   },
@@ -66,6 +70,17 @@ const projects = ref([
         "The application includes a simple command-line interface for user input and output.",
     repoLink: "https://github.com/Mattan41/SPI-unitconverter",
     repoName: "SPI-unitconverter"
+  },
+  {
+    id: 6,
+    title: "Jakarta Project with WildFly",
+    link: "#",
+    shortDescription: "Restful Web Service Implementation with JAX-RS, Jakarta EE, and WildFly.",
+    description: "This project is a Java-based application built with Jakarta EE and running on the WildFly application server. " +
+        "The application includes comprehensive integration tests using Testcontainers and RestAssured to ensure robust and reliable functionality. " +
+        "Docker and Docker Compose are used to containerize the application and manage multi-container setups.",
+    repoLink: "https://github.com/Mattan41/projektJakarta",
+    repoName: "JakartaProject"
   }
 ]);
 </script>
