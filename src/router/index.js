@@ -23,12 +23,12 @@ const router = createRouter({
         component: () => import('../views/projects/ProjectsView.vue'),
       props: true,
     },
-    {
-      path: '/projects/:id/:title/:description/:link/:repoLink/:repoName/:otherLink?',
-      name: 'projectdetails',
-      props: true, // Enable props passing
-      component: () => import('../views/projects/ProjectDetails.vue'),
-    }
+ {
+  path: '/projects/:id',
+  name: 'projectdetails',
+  props: true,
+  component: () => import('../views/projects/ProjectDetails.vue'),
+}
 
   ]
 })

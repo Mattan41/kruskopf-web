@@ -28,7 +28,10 @@
 </template>
 
 <script setup>
-defineProps(['id', 'title', 'description', 'link', 'repoLink', 'repoName', 'otherLink']);
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const { title, description, link, repoLink, repoName, otherLink } = route.query;
 </script>
 <style>
 @media (min-width: 1024px) {
