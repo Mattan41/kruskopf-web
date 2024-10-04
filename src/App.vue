@@ -2,7 +2,7 @@
 import {RouterLink, RouterView, useRoute} from 'vue-router'
 import HomePage from "@/components/HomePage.vue";
 import {computed} from "vue";
-
+import { ElButton } from 'element-plus'
 const route = useRoute()
 
 const msg = computed(() => {
@@ -26,6 +26,7 @@ const msg = computed(() => {
         <RouterLink to="/about" class="inline-block px-4 py-2 hover:border-blue-500">About me</RouterLink>
         <RouterLink to="/projects" class="inline-block px-4 py-2 hover:border-blue-500">Projects</RouterLink>
       </nav>
+      <el-button type="primary">Hello Element Plus</el-button>
     </div>
     <div class="wrapper flex items-start flex-wrap mt-8 lg:mt-0">
       <HomePage :msg="msg" />
