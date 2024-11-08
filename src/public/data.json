@@ -24,7 +24,7 @@
     "link": "#",
     "shortDescription": "A microservice for searching message content using Elasticsearch.",
     "description": "A microservice I built as a school project in the chatgut organization, enables users to search message content using Elasticsearch. The service is built with Java and Spring Boot. There is also a branch where deployment is done with Kubernetes.",
-    "repoLink": "https://github.com/chatgut/searchService3",
+    "repoLink": "https://github.com/Mattan41/searchService3",
     "repoName": "searchService3"
   },
   {
