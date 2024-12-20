@@ -20,12 +20,12 @@
   },
   {
     "id": 3,
-    "title": "Search Service for Chatgut",
+    "title": "Cinema Scala",
     "link": "#",
-    "shortDescription": "A microservice for searching message content using Elasticsearch.",
-    "description": "A microservice I built as a school project in the chatgut organization, enables users to search message content using Elasticsearch. The service is built with Java and Spring Boot. There is also a branch where deployment is done with Kubernetes.",
-    "repoLink": "https://github.com/Mattan41/searchService3",
-    "repoName": "searchService3"
+    "shortDescription": "A web application for scheduling and booking movie viewings, Frontend: JavaScript, Vue.js, Tailwind CSS; Backend: Java, Spring Boot, MongoDB",
+    "description": "Cinema Scala is a school group project, a web application booking system for movie tickets at a Cinema. The frontend is built in Vue.js and the backend is built with Spring Boot. Users can create an account and login with oath2 google-id. Admin can log on to admin panel and schedule viewings of movies. For oath2 you need a client-id and client-secret, and to populate the database with movies you need a access token from TMDB",
+    "repoLink": "https://github.com/Mattan41/projekt-cinema-scala",
+    "repoName": "projekt-cinema-scala"
   },
   {
     "id": 4,
@@ -53,5 +53,14 @@
     "description": "This project is a Java-based application built with Jakarta EE and running on the WildFly application server. The application includes comprehensive integration tests using Testcontainers and RestAssured to ensure robust and reliable functionality. Docker and Docker Compose are used to containerize the application and manage multi-container setups. It allows users to perform CRUD (Create, Read, Update, Delete) operations on a collection of movies stored in a MySQL database. Users can: Create new movie entries. Read all movies or a specific movie by its UUID. Update existing movie details. Delete movies by their UUID. The application exchanges data in JSON format and uses Data Transfer Objects (DTOs) to handle data between the client and server. It also includes error handling, data validation, and is containerized using Docker for easy deployment.",
     "repoLink": "https://github.com/Mattan41/projektJakarta",
     "repoName": "JakartaProject"
+  },
+  {
+    "id": 7,
+    "title": "Search Service for Chatgut",
+    "link": "#",
+    "shortDescription": "A microservice for searching message content using Elasticsearch.",
+    "description": "A microservice I built as a school project in the chatgut organization, enables users to search message content using Elasticsearch. The service is built with Java and Spring Boot. There is also a branch where deployment is done with Kubernetes.",
+    "repoLink": "https://github.com/Mattan41/searchService3",
+    "repoName": "searchService3"
   }
 ]
