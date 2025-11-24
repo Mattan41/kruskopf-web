@@ -58,7 +58,7 @@ export const useProjects = () => {
             tags: ['Java', 'Spring Boot', 'Elasticsearch', 'Kubernetes'],
             repoLink: 'https://github.com/chatgut/searchService3',
             link: null,
-            status: 'completed-academic',
+            status: 'academic',
             category: "backend"
         },
         {
