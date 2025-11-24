@@ -7,7 +7,7 @@
             <img
                 alt="Mats logo"
                 class="w-12 h-12 rounded-full bg-white border-2 border-blue-500"
-                src="assets/logo.svg"
+                src="/assets/logo.svg"
             />
             <span class="text-xl font-bold text-gray-900 dark:text-gray-100 hidden sm:block">Mats Kruskopf</span>
           </NuxtLink>
