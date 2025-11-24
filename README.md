@@ -1,6 +1,6 @@
 # kruskopf-web
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Nuxt 3.
 
 ## Recommended IDE Setup
 
@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+See [Nuxt 3 Documentation](https://nuxt.com/docs).
 
 ## Project Setup
 
@@ -21,9 +21,19 @@ npm install
 ```sh
 npm run dev
 ```
+### Compile and Hot-Reload for Development on LAN
+
+```sh
+npm run dev:lan
+```
 
 ### Compile and Minify for Production
 
 ```sh
 npm run build
+```
+### Generate Static Site for Deployment
+
+```sh
+npm run generate
 ```
