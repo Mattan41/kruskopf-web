@@ -14,7 +14,7 @@ export const useProjects = () => {
         {
             slug: 'kruskopf-org',
             title: 'This Website',
-            shortDescription: 'A modern  website built with Nuxt 3, showcasing my hobbies, projects and skills.',
+            shortDescription: 'A modern website built with Nuxt 3, showcasing my hobbies, projects and skills.',
             tags: ['Nuxt 3', 'Vue.js'],
             repoLink: 'https://github.com/Mattan41/kruskopf-web',
             link: 'https://kruskopf.org',
