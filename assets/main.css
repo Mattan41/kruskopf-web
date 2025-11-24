@@ -1,4 +1,4 @@
-@import './base.css';
+@import 'base.css';
 @keyframes bouncing-banner {
   0% {
     transform: translateX(3%);
