@@ -1,8 +1,10 @@
-// tailwind.config.js
 module.exports = {
     content: [
-        './public/**/*.html',
-        './src/**/*.{js,jsx,ts,tsx,vue}',
+        './components/**/*.{js,vue,ts}',
+        './layouts/**/*.vue',
+        './pages/**/*.vue',
+        './plugins/**/*.{js,ts}',
+        './app.vue',
     ],
     darkMode: 'media',
     theme: {
