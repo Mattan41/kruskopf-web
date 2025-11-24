@@ -50,7 +50,7 @@
           </div>
           <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
             <div class="text-4xl mb-2">🐳</div>
-            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">Docker & Github</h3>
+            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">Docker & GitHub</h3>
             <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Containerization & deployment</p>
           </div>
           <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
