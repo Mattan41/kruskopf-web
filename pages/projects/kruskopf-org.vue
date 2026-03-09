@@ -138,7 +138,7 @@
     <div class="bg-gray-50 border-l-4 border-blue-500 p-4 mb-8">
       <p class="text-gray-700">
         <strong>Fun fact:</strong> This very page you're reading is part of the project being described!
-        It's a recursive portfolio that documents itself. 🎭
+        It's a recursive portfolio that documents itself.
       </p>
     </div>
 
