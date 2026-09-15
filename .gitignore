@@ -7,30 +7,38 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
+# Dependencies & Build artifacts
+node_modules/
 .nuxt/
 .output/
+.nitro/
+.cache/
 dist/
 dist-ssr/
-coverage
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Local env files
 *.local
 .env
 .env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
+# TypeScript cache
 *.tsbuildinfo
 
-# Lock files
-package-lock.json
+# Local files
+docs/local/
