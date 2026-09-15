@@ -1,13 +1,12 @@
-
 // composables/useProjects.ts
 export const useProjects = () => {
     const projects = [
         {
             title: "Unseen Servant",
             slug: "unseen-servant",
-            shortDescription: "Vue 3 + Spring Boot JPA project (private demo)",
+            shortDescription: "Vue 3 + Spring Boot JPA project",
             tags: ["Vue.js", "Spring Boot", "MySQL", "Docker"],
-            repoLink: 'https://github.com/Mattan41/unseen-servant',
+            repoLink: 'https://github.com/Mattan41/unseenservant-backend',
             link: 'https://unseenservant.se',
             category: "full-stack"
         },

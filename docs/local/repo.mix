@@ -1,0 +1,1935 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: **/*.env*, **/secrets/**, **/.git/**
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+assets/
+  base.css
+  index.css
+  main.css
+components/
+  ProjectBadge.vue
+  ProjectCard.vue
+  ProjectStatus.vue
+composables/
+  useProjects.ts
+layouts/
+  default.vue
+pages/
+  projects/
+    5e-encounter-builder.vue
+    chatgut-search.vue
+    cinema-scala.vue
+    index.vue
+    jakarta-wildfly.vue
+    kruskopf-org.vue
+    spi-unitconverter.vue
+    spring-messaging.vue
+    top-flicks.vue
+    unseen-servant.vue
+  about.vue
+  index.vue
+public/
+  haticon.ico
+  logo.svg
+src/
+  public/
+    data.json
+  router/
+    index.js
+.gitignore
+jsconfig.json
+nuxt.config.ts
+package.json
+README.md
+tailwind.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/logo.svg">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="461.000000pt" height="461.000000pt" viewBox="0 0 461.000000 461.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,461.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1555 4240 c-3 -5 10 -130 29 -277 19 -147 36 -281 38 -298 l3 -30
+-160 -18 c-88 -10 -164 -22 -168 -26 -11 -11 70 -490 85 -509 6 -7 20 -11 30
+-9 26 7 22 -7 -17 -62 -19 -27 -50 -82 -69 -122 -29 -65 -39 -99 -62 -208 l-5
+-23 -127 4 c-147 5 -185 18 -271 93 -30 26 -66 52 -80 57 -39 16 -120 16 -139
+1 -16 -12 -16 -14 2 -28 11 -8 28 -13 37 -10 34 11 97 -16 165 -70 91 -73 156
+-93 303 -96 l111 -1 0 -30 c0 -152 112 -388 234 -495 24 -21 83 -96 131 -167
+47 -71 126 -181 174 -245 48 -64 91 -123 97 -131 5 -8 11 -69 14 -135 5 -112
+6 -120 25 -120 19 0 20 8 23 117 3 140 5 135 -117 298 -48 63 -112 152 -143
+196 l-57 82 49 -24 c79 -38 188 -65 290 -71 130 -8 233 13 402 82 15 6 16 3 2
+-47 -36 -137 -56 -273 -49 -338 4 -36 10 -112 13 -170 6 -96 9 -105 27 -105
+22 0 21 -23 13 315 -2 93 6 140 58 336 14 54 22 66 65 98 132 98 234 280 264
+468 5 33 10 38 41 44 19 3 86 4 147 1 120 -6 192 -26 273 -79 65 -42 112 -58
+171 -58 40 0 55 4 60 16 8 22 -14 34 -67 34 -25 0 -56 6 -70 13 -46 25 -105
+59 -115 67 -11 8 -83 34 -100 36 -5 0 -19 5 -30 10 -11 5 -83 9 -160 9 l-141
+0 -17 104 c-17 106 -46 179 -107 271 -16 25 -36 53 -42 64 -7 10 -23 29 -35
+42 -31 31 -29 40 10 41 17 0 55 1 83 2 90 2 87 -10 74 281 -6 140 -15 259 -19
+263 -4 4 -122 -7 -262 -26 -140 -19 -255 -33 -256 -32 -2 1 -8 136 -13 301 -6
+164 -13 305 -15 312 -5 15 -620 18 -630 2z m985 -1182 c82 -83 78 -78 123
+-170 210 -433 -106 -929 -608 -955 -283 -14 -546 134 -668 377 -78 155 -95
+296 -56 446 24 93 71 187 134 267 45 56 50 59 115 59 11 0 22 0 24 -1 3 0 -9
+-14 -25 -30 -38 -38 -38 -78 -1 -113 36 -34 59 -44 106 -47 22 -1 43 -4 48 -7
+5 -3 15 -1 22 5 8 7 18 11 22 10 40 -7 94 48 94 94 0 36 -12 55 -48 79 -22 15
+-21 16 35 21 32 4 130 9 218 13 88 4 168 9 177 13 10 3 64 6 120 6 l103 -1 65
+-66z m-720 -66 c0 -12 -8 -26 -17 -29 -10 -4 -20 -10 -23 -13 -3 -4 -25 -10
+-50 -14 -33 -5 -54 -2 -79 11 -76 40 -62 78 35 98 52 10 61 9 96 -9 27 -15 38
+-28 38 -44z"/>
+<path d="M2241 3036 c-52 -17 -91 -52 -91 -80 0 -12 8 -35 19 -52 15 -24 29
+-33 76 -43 79 -18 137 -17 166 2 14 10 28 15 31 11 10 -9 48 53 48 79 0 26
+-30 67 -49 67 -6 0 -11 4 -11 8 0 5 -6 9 -12 9 -7 1 -40 4 -73 7 -39 4 -75 1
+-104 -8z m143 -40 c7 3 23 -7 36 -21 24 -25 24 -26 4 -45 -11 -11 -31 -23 -44
+-26 -42 -11 -134 -7 -138 5 -2 6 -10 11 -17 11 -7 0 -16 7 -19 16 -6 17 12 60
+21 50 4 -3 12 -1 20 5 7 6 13 9 13 6 0 -4 10 -3 22 2 12 4 37 4 56 0 19 -4 40
+-5 46 -3z"/>
+<path d="M2306 2961 c-6 -10 10 -25 36 -34 17 -6 28 9 21 31 -5 14 -49 17 -57
+3z"/>
+<path d="M1983 2940 c-9 -16 -21 -30 -25 -30 -4 0 -8 -6 -8 -12 0 -7 -14 -29
+-30 -48 -17 -19 -37 -51 -46 -70 -10 -19 -30 -54 -46 -77 -112 -165 -104 -256
+28 -283 73 -15 109 -10 109 15 0 17 -9 21 -53 26 -86 11 -112 26 -112 64 0 17
+11 52 25 76 14 24 28 52 31 62 4 9 10 17 15 17 5 0 9 5 9 10 0 6 36 63 80 127
+44 65 80 125 80 135 0 29 -37 21 -57 -12z"/>
+<path d="M2018 2364 c-3 -3 -100 -6 -214 -7 -201 -2 -209 -3 -209 -22 0 -18 9
+-21 75 -27 41 -4 149 -3 240 2 239 14 366 12 435 -5 37 -10 62 -12 68 -6 39
+39 -80 71 -261 71 -71 0 -131 -3 -134 -6z"/>
+<path d="M1687 3016 c-24 -18 -12 -45 19 -41 33 3 41 12 28 32 -14 23 -26 25
+-47 9z"/>
+<path d="M1063 1164 c-3 -8 -2 -19 3 -23 14 -13 126 -48 278 -86 76 -19 141
+-37 145 -40 3 -3 -23 -61 -57 -128 -34 -67 -62 -130 -62 -139 0 -10 -5 -18
+-11 -18 -16 0 -161 37 -276 71 -102 30 -123 31 -123 3 0 -18 20 -26 175 -70
+263 -75 471 -104 749 -104 307 0 761 -29 1028 -66 39 -6 49 -4 54 10 4 10 3
+21 -2 26 -5 5 -101 20 -213 32 l-202 22 6 61 c6 47 18 78 58 145 28 47 52 87
+54 89 1 2 89 -6 194 -18 192 -22 218 -20 206 12 -3 9 -35 18 -94 25 -162 21
+-406 42 -553 48 -80 3 -152 8 -160 11 -8 3 -114 5 -234 4 -320 -2 -503 22
+-801 109 -77 22 -144 40 -148 40 -4 0 -10 -7 -14 -16z m640 -173 c48 -5 90
+-10 92 -13 2 -2 -20 -46 -50 -98 -30 -52 -59 -118 -65 -146 -12 -57 4 -54
+-150 -34 -126 16 -121 14 -105 60 8 22 32 70 54 108 21 37 45 84 52 105 13 36
+15 38 49 32 19 -3 75 -9 123 -14z m297 -15 c0 -2 -11 -33 -24 -68 -13 -35 -30
+-101 -36 -146 l-12 -82 -105 0 -105 0 7 33 c6 31 25 72 96 204 l34 63 73 0
+c39 0 72 -2 72 -4z m152 -58 c-13 -35 -29 -98 -34 -142 -4 -43 -11 -82 -14
+-87 -3 -5 -32 -9 -66 -9 l-60 0 7 53 c8 64 29 141 55 201 l19 46 59 0 60 0
+-26 -62z m198 48 c0 -5 -41 -122 -76 -218 -28 -75 -30 -78 -61 -78 -39 0 -65
+9 -58 21 3 5 10 44 15 87 5 44 20 103 34 135 l25 57 60 0 c34 0 61 -2 61 -4z
+m258 -11 c1 -1 -20 -40 -48 -86 -27 -46 -50 -95 -50 -109 0 -14 -3 -43 -7 -64
+l-6 -39 -95 6 c-52 4 -96 8 -98 10 -2 2 19 65 46 140 28 75 50 141 50 147 0 8
+31 9 103 4 56 -4 103 -8 105 -9z"/>
+<path d="M1057 1093 c-27 -27 30 -59 204 -114 100 -32 133 -32 127 -2 -2 12
+-30 25 -93 44 -50 14 -118 38 -152 53 -66 28 -76 30 -86 19z"/>
+<path d="M1017 954 c-29 -29 20 -56 101 -56 48 0 58 -4 93 -35 63 -57 98 -25
+37 34 -45 42 -71 54 -115 52 -21 -2 -54 1 -73 5 -19 4 -39 4 -43 0z"/>
+<path d="M2804 856 c-8 -22 14 -55 41 -62 13 -3 55 0 94 6 54 10 79 10 117 1
+31 -8 50 -9 57 -2 19 19 -3 40 -57 52 -45 10 -70 10 -127 -1 -64 -11 -73 -11
+-81 4 -11 20 -37 21 -44 2z"/>
+<path d="M2815 721 c-31 -5 -40 -10 -40 -26 0 -18 7 -20 85 -21 63 0 100 -6
+142 -23 70 -27 123 -25 123 4 0 16 -9 21 -40 26 -22 4 -59 13 -81 22 -51 19
+-136 27 -189 18z"/>
+</g>
+</svg>
+</file>
+
+<file path="assets/base.css">
+/* inject tailwindcss base styles */
+@tailwind base;
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+
+/* semantic color variables for this project */
+
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</file>
+
+<file path="assets/index.css">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</file>
+
+<file path="assets/main.css">
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: normal;
+  color: #3498db;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: normal;
+  color: #3498db;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: normal;
+  color: #3498db;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(191, 100%, 37%, 0.2);
+  }
+}
+</file>
+
+<file path="components/ProjectBadge.vue">
+<template>
+  <span
+      v-if="category"
+      class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wide rounded-full"
+      :class="badgeClass"
+  >
+    {{ label }}
+  </span>
+</template>
+
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+  category: {
+    type: String,
+    required: false,
+    default: ''
+  }
+})
+
+const label = computed(() => {
+  switch (props.category) {
+    case 'frontend': return 'Frontend Project'
+    case 'backend': return 'Backend Project'
+    case 'full-stack': return 'Full-Stack Project'
+    default: return props.category || ''
+  }
+})
+
+const badgeClass = computed(() => {
+  switch (props.category) {
+    case 'frontend': return 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
+    case 'backend': return 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200'
+    case 'full-stack': return 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200'
+    default: return 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300'
+  }
+})
+</script>
+</file>
+
+<file path="components/ProjectCard.vue">
+<template>
+  <NuxtLink
+      :to="`/projects/${project.slug}`"
+      class="project-card block p-6 rounded-lg transition-all duration-300 hover:shadow-xl
+           border border-gray-200 hover:border-blue-400 dark:border-gray-700
+           bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900"
+  >
+    <div class="mb-2">
+      <ProjectBadge v-if="project.category" :category="project.category" />
+    </div>
+
+    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">
+      {{ project.title }}
+    </h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+      {{ project.shortDescription }}
+    </p>
+    <div class="flex flex-wrap gap-2">
+      <span
+          v-for="tag in project.tags"
+          :key="tag"
+          class="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 text-sm rounded-full"
+      >
+        {{ tag }}
+      </span>
+    </div>
+  </NuxtLink>
+</template>
+
+<script setup>
+defineProps({
+  project: {
+    type: Object,
+    required: true
+  }
+})
+</script>
+
+<style scoped>
+.project-card:hover {
+  transform: translateY(-4px);
+}
+</style>
+</file>
+
+<file path="components/ProjectStatus.vue">
+<template>
+  <div v-if="status" class="project-status mb-6">
+    <span
+        class="inline-block px-3 py-1 text-sm font-medium rounded-full border"
+        :class="badge.class"
+    >
+      {{ badge.text }}
+    </span>
+    <p class="text-sm text-gray-600 italic mt-2">
+      {{ description }}
+    </p>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps({
+  status: {
+    type: String,
+    required: true
+  }
+})
+
+const { getStatusBadge, getStatusDescription } = useProjects()
+
+const badge = computed(() => getStatusBadge(props.status))
+const description = computed(() => getStatusDescription(props.status))
+</script>
+
+<style scoped>
+.project-status {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+</style>
+</file>
+
+<file path="pages/projects/5e-encounter-builder.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">5e Encounter Builder</h1>
+
+    <ProjectStatus status="ongoing" />
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Vue.js</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">API</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Gaming</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        This application is a school project designed as an encounter builder for the RPG system 5e.
+        It is a web application built with Vue.js that utilizes the Open5e API.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The current functionality includes listing a handful of monsters and adding them to a combat list,
+        and optionally create your own monster and add to combat. Combat list is stored in local storage.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Future development plans include extending the functionality to allow searching and filtering monsters,
+        as well as saving monsters to a favorites list.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Browse monsters from Open5e API</li>
+        <li>Create custom monsters</li>
+        <li>Build combat encounters</li>
+        <li>Local storage persistence</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Vue.js 3</li>
+        <li>Open5e API</li>
+        <li>Local Storage API</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://5eCombatEncounter.kruskopf.org"
+          target="_blank"
+          class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+      >
+        Try it Live
+      </a>
+      <a
+          href="https://github.com/Mattan41/5eEncounterBuilder"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+      <a
+          href="https://open5e.com/api-docs"
+          target="_blank"
+          class="px-6 py-3 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors"
+      >
+        Open5e API Docs
+      </a>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/projects/chatgut-search.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Search Service for Chatgut</h1>
+    <ProjectStatus status="academic" />
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Spring Boot</span>
+      <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full">Elasticsearch</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Kubernetes</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        A microservice I built in the chatgut organization,
+        enabling users to search message content using Elasticsearch.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The service is built with Java and Spring Boot, providing fast and efficient
+        full-text search capabilities for the messaging platform.
+      </p>
+      <p class="text-lg leading-relaxed">
+        There is also a branch where deployment is done with Kubernetes, demonstrating
+        modern cloud-native deployment practices.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Full-text search using Elasticsearch</li>
+        <li>RESTful API design</li>
+        <li>Microservice architecture</li>
+        <li>Kubernetes deployment option</li>
+        <li>Integration with messaging platform</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Elasticsearch</li>
+        <li>Kubernetes (deployment)</li>
+        <li>Docker</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://github.com/chatgut/searchService3"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+<script setup lang="ts">
+</script>
+</file>
+
+<file path="pages/projects/cinema-scala.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Cinema Scala</h1>
+
+    <ProjectStatus status="academic" />
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Vue.js</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Spring Boot</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">OAuth2</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">MySQL</span>
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">TMDB API</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Google Authentication</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        Cinema Scala is a full-stack cinema booking system that demonstrates modern web
+        application architecture with separate frontend and backend services.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The frontend is built with Vue.js, providing a responsive and intuitive user interface
+        for browsing movies and managing bookings. The backend is powered by Spring Boot,
+        handling business logic, authentication, and database operations.
+      </p>
+      <p class="text-lg leading-relaxed">
+        The application integrates with Google OAuth2 for secure user authentication and
+        TMDB (The Movie Database) API for rich movie data and metadata.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+
+      <h3 class="text-xl font-semibold mb-3 text-gray-700">User Features</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg mb-4">
+        <li>Create account and login with Google OAuth2</li>
+        <li>Browse available movies from TMDB</li>
+        <li>View movie details and showtimes</li>
+        <li>Book cinema tickets</li>
+        <li>Manage personal bookings</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mb-3 text-gray-700">Admin Features</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Access dedicated admin panel</li>
+        <li>Schedule movie viewings</li>
+        <li>Manage cinema showings</li>
+        <li>Configure screening times and theaters</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technical Architecture</h2>
+
+      <h3 class="text-xl font-semibold mb-3 text-gray-700">Frontend</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg mb-4">
+        <li>Vue.js 3 with Composition API</li>
+        <li>Vue Router for navigation</li>
+        <li>Responsive design</li>
+        <li>RESTful API integration</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mb-3 text-gray-700">Backend</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg mb-4">
+        <li>Spring Boot framework</li>
+        <li>Spring Security with OAuth2</li>
+        <li>MySQL database</li>
+        <li>RESTful API endpoints</li>
+        <li>JPA/Hibernate for data persistence</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mb-3 text-gray-700">Authentication & APIs</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Google OAuth2 authentication (requires Client ID & Client Secret)</li>
+        <li>TMDB API integration (requires Access Token)</li>
+        <li>Secure session management</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Configuration Requirements</h2>
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+        <p class="text-gray-700">
+          <strong>Note:</strong> To run this application, you need to configure:
+        </p>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li>Google OAuth2 Client ID and Client Secret</li>
+          <li>TMDB API Access Token</li>
+          <li>MySQL database connection</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Frontend</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Vue.js 3</li>
+            <li>Vue Router</li>
+            <li>Axios</li>
+            <li>HTML5/CSS3</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Backend</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Spring Security</li>
+            <li>Spring Data JPA</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Authentication</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>OAuth2</li>
+            <li>Google Identity Platform</li>
+            <li>JWT (optional)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">External APIs</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>TMDB (The Movie Database)</li>
+            <li>Google OAuth2 API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">What I Learned</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Implementing OAuth2 authentication flow</li>
+        <li>Building full-stack applications with separate frontend/backend</li>
+        <li>Working with external APIs (TMDB)</li>
+        <li>Role-based access control (user vs admin)</li>
+        <li>Managing application secrets and configuration</li>
+        <li>RESTful API design and implementation</li>
+        <li>Database schema design for booking systems</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://github.com/Mattan41/cinema-scala"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/projects/index.vue">
+<template>
+  <div class="projects-page p-8 bg-white dark:bg-gray-900 min-h-screen">
+    <div class="w-full">
+      <h1 class="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">
+        My Projects
+      </h1>
+      <div class="projects-grid">
+        <ProjectCard
+            v-for="project in projects"
+            :key="project.slug"
+            :project="project"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const { projects } = useProjects()
+</script>
+
+<style scoped>
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+</file>
+
+<file path="pages/projects/jakarta-wildfly.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Jakarta Project with WildFly</h1>
+
+    <ProjectStatus status="academic" />
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">Jakarta EE</span>
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">WildFly</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Docker</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">REST API</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        This project is a Java-based application built with Jakarta EE and running on
+        the WildFly application server.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The application includes comprehensive integration tests using Testcontainers
+        and RestAssured to ensure robust and reliable functionality. Docker and Docker
+        Compose are used to containerize the application and manage multi-container setups.
+      </p>
+      <p class="text-lg leading-relaxed">
+        It allows users to perform CRUD (Create, Read, Update, Delete) operations on a
+        collection of movies stored in a MySQL database.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>RESTful API with JAX-RS</li>
+        <li>Full CRUD operations on movie database</li>
+        <li>UUID-based entity identification</li>
+        <li>JSON data exchange format</li>
+        <li>Data Transfer Objects (DTOs)</li>
+        <li>Comprehensive error handling</li>
+        <li>Data validation</li>
+        <li>Integration tests with Testcontainers</li>
+        <li>Docker containerization</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Operations</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Create new movie entries</li>
+        <li>Read all movies or specific movie by UUID</li>
+        <li>Update existing movie details</li>
+        <li>Delete movies by UUID</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Java</li>
+        <li>Jakarta EE</li>
+        <li>JAX-RS (RESTful Web Services)</li>
+        <li>WildFly Application Server</li>
+        <li>MySQL Database</li>
+        <li>Docker & Docker Compose</li>
+        <li>Testcontainers</li>
+        <li>RestAssured (testing)</li>
+        <li>JSON</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://github.com/Mattan41/projektJakarta"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+<script setup lang="ts">
+</script>
+</file>
+
+<file path="pages/projects/spi-unitconverter.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">SPI Unit Converter</h1>
+
+    <ProjectStatus status="academic" />
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">SPI</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Design Patterns</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        This Java application is built with the Service Provider Interface (SPI) pattern,
+        demonstrating advanced Java design patterns and modular architecture.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The program allows users to select from various Converter implementations to
+        perform conversions between different units.
+      </p>
+      <p class="text-lg leading-relaxed">
+        The application includes a simple command-line interface for user input and output,
+        showcasing the flexibility and extensibility of the SPI pattern.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Service Provider Interface (SPI) architecture</li>
+        <li>Multiple converter implementations</li>
+        <li>Pluggable converter modules</li>
+        <li>Command-line interface</li>
+        <li>Extensible design for adding new converters</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Design Patterns</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Service Provider Interface (SPI)</li>
+        <li>Strategy Pattern</li>
+        <li>Factory Pattern</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Java</li>
+        <li>Java SPI</li>
+        <li>ServiceLoader API</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://github.com/Mattan41/SPI-unitconverter"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+<script setup lang="ts">
+</script>
+</file>
+
+<file path="pages/projects/spring-messaging.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Spring Boot Messaging Application</h1>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Spring Boot</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Thymeleaf</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">MySQL</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">HTMX</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        A group project I participated in, where we built a web-based messaging platform
+        using Java, Spring Boot, and Thymeleaf.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        It allows users to create, edit, and view messages. The application supports
+        user authentication and authorization, message translation, and provides a
+        user-friendly interface for managing messages.
+      </p>
+      <p class="text-lg leading-relaxed">
+        It uses a MySQL database for data storage and integrates with various Spring Boot
+        starters for functionality such as data access, security, and validation.
+        Additionally, there is a branch that updates messages using HTMX.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>User authentication and authorization</li>
+        <li>Create, edit, and delete messages</li>
+        <li>Message translation support</li>
+        <li>MySQL database integration</li>
+        <li>Server-side rendering with Thymeleaf</li>
+        <li>HTMX for dynamic updates (separate branch)</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Java</li>
+        <li>Spring Boot (Data, Security, Validation)</li>
+        <li>Thymeleaf</li>
+        <li>MySQL</li>
+        <li>HTMX (experimental branch)</li>
+        <li>Spring Security</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://github.com/Mattan41/springBootGroupProject"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/projects/top-flicks.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Top Flicks</h1>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">HTML</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">CSS</span>
+      <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full">JavaScript</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        Top Flicks is a school project web application built with HTML, CSS, and JavaScript
+        for browsing and managing your favorite movies.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Users can register, log in, search for movies, and add them to their favorites.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>User registration and authentication</li>
+        <li>Movie search functionality</li>
+        <li>Favorites management</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://topflicks.kruskopf.org/"
+          target="_blank"
+          class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+      >
+        Try it Live
+      </a>
+      <a
+          href="https://github.com/Mattan41/labb-html-css-javascript"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/projects/unseen-servant.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">Unseen Servant</h1>
+    <p class="mb-6 text-lg leading-relaxed">
+      This project started as my exam work at IT-Högskolan but lives on as a hobby project, built with Vue 3 and Spring Boot JPA to MySQL.
+      Currently hosted locally on Mini-PC with Cloudflare tunnel out to the internet.
+    </p>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full">Vue.js</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200 rounded-full">Spring Boot</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200 rounded-full">MySQL</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200 rounded-full">Docker</span>
+    </div>
+
+    <div class="mt-8 text-center">
+      <p class="italic text-gray-600 dark:text-gray-400 mb-4">
+        Access restricted – only whitelisted accounts can log in.
+      </p>
+          <div class="flex gap-4 mt-8">
+      <a
+          href="https://unseenservant.se"
+          target="_blank"
+          class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+      >
+        Try it Live
+      </a>
+      <a
+          href="https://github.com/Mattan41/unseenservant-backend"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View backend on GitHub
+      </a>
+      <a
+          href="https://github.com/Mattan41/unseenservant-frontend"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View frontend on GitHub
+      </a>
+      <a
+          href="https://open5e.com/api-docs"
+          target="_blank"
+          class="px-6 py-3 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors"
+      >
+        Open5e API Docs
+      </a>
+    </div>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/about.vue">
+<template>
+  <div>
+    <!-- Hero Section -->
+    <section
+        class="bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32 min-h-screen flex items-center"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <img
+              alt="Mats Kruskopf"
+              class="w-32 h-32 rounded-full mx-auto mb-6 border-4 shadow-lg bg-white border-gray-700  float-animation"
+              src="/logo.svg"
+          />
+          <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            About Me
+          </h1>
+          <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Full-Stack Developer | Musician
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-prose lg:max-w-none mx-auto text-gray-700 dark:text-gray-300">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Hello</h2>
+          <p class="mb-6">
+            I'm Mats Kruskopf, a passionate full-stack developer with a strong foundation
+            in both frontend and backend technologies.
+          </p>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 mt-12">What I Do</h3>
+          <p class="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 mt-12">Musician</h3>
+          <p class="mb-6">
+            When I'm not coding, I find myself singing with a guitar in hand.
+          </p>
+
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 mt-12">Gamer</h3>
+          <p class="mb-6">
+            When I'm not coding, I find myself board gaming with friends, or preparing next Dungeons & Dragons session.
+          </p>
+
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <div class="bg-blue-50 dark:bg-blue-900 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Frontend</h3>
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+              <li>✓ Vue.js</li>
+              <li>✓ Tailwind CSS</li>
+              <li>✓ Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="bg-green-50 dark:bg-green-900 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Backend</h3>
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+              <li>✓ Java & Spring Boot</li>
+              <li>✓ RESTful APIs</li>
+              <li>✓ MySQL</li>
+              <li>✓ OAuth2 Authentication</li>
+            </ul>
+          </div>
+
+          <div class="bg-purple-50 dark:bg-purple-900 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">DevOps</h3>
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+              <li>✓ Docker</li>
+              <li>✓ Git & GitHub</li>
+              <li>✓ CI/CD Basics</li>
+            </ul>
+          </div>
+
+          <div class="bg-orange-50 dark:bg-orange-900 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Other</h3>
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+              <li>✓ Agile Development</li>
+              <li>✓ API Integration</li>
+              <li>✓ Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div
+            class="mt-12 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Projects</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">Check out my projects!</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <NuxtLink
+                to="/projects"
+                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+            >
+              View Projects
+            </NuxtLink>
+            <a
+                href="https://github.com/Mattan41"
+                target="_blank"
+                class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-semibold"
+            >
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<style scoped>
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+</style>
+<script setup lang="ts">
+</script>
+</file>
+
+<file path="layouts/default.vue">
+<template>
+  <div class="min-h-screen flex flex-col">
+    <header class="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <NuxtLink to="/" class="flex items-center space-x-3">
+            <img
+                alt="Mats logo"
+                class="w-12 h-12 rounded-full bg-white border-2 border-blue-500"
+                src="/logo.svg"
+            />
+            <span class="text-xl font-bold text-gray-900 dark:text-gray-100 hidden sm:block">Mats Kruskopf</span>
+          </NuxtLink>
+
+          <nav class="flex space-x-1">
+            <NuxtLink
+                to="/"
+                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
+                 hover:bg-blue-50 dark:hover:bg-gray-700
+                 hover:text-blue-600 transition-colors"
+            >
+              Home
+            </NuxtLink>
+            <NuxtLink
+                to="/about"
+                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
+                 hover:bg-blue-50 dark:hover:bg-gray-700
+                 hover:text-blue-600 transition-colors"
+            >
+              About
+            </NuxtLink>
+            <NuxtLink
+                to="/projects"
+                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
+                hover:bg-blue-50 dark:hover:bg-gray-700
+                hover:text-blue-600 transition-colors"
+            >
+              Projects
+            </NuxtLink>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <slot/>
+    </main>
+
+    <footer class="bg-gray-50 dark:bg-gray-900 border-t mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="text-center text-gray-600 dark:text-gray-300">
+          <p>&copy; {{ new Date().getFullYear() }} Mats Kruskopf. Built with Nuxt 3.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<style scoped>
+nav a.router-link-exact-active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-weight: 500;
+}
+</style>
+</file>
+
+<file path="pages/projects/kruskopf-org.vue">
+<template>
+  <article class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <NuxtLink to="/projects" class="text-blue-500 hover:underline mb-4 inline-block">
+      ← Back to Projects
+    </NuxtLink>
+
+    <h1 class="text-4xl font-bold mb-4">This Website</h1>
+
+    <ProjectStatus status="ongoing" />
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Nuxt 3</span>
+      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Vue.js</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Tailwind CSS</span>
+      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">TypeScript</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">File-based Routing</span>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        This website serves as a showcase for my development projects and technical skills.
+        Built with Nuxt 3, it demonstrates modern web development practices and clean architecture.
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        The site was originally built with Vue 3 and Vue Router, but I migrated it to Nuxt 3
+        to leverage server-side rendering, better SEO, and simplified routing through file-based conventions.
+      </p>
+      <p class="text-lg leading-relaxed">
+        You're currently viewing this very project!
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Responsive design that works on all devices</li>
+        <li>File-based routing with Nuxt pages directory</li>
+        <li>Reusable components (ProjectCard, ProjectStatus)</li>
+        <li>Composables for shared logic and data</li>
+        <li>Dynamic project pages with individual content</li>
+        <li>Tailwind CSS for rapid styling</li>
+        <li>SEO-optimized with proper meta tags</li>
+        <li>Dark mode support (inherited from base CSS)</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technical Journey</h2>
+
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">Original Stack</h3>
+          <ul class="list-disc list-inside space-y-1 text-lg">
+            <li>Vue 3 with Composition API</li>
+            <li>Vue Router for manual routing configuration</li>
+            <li>Vite as build tool</li>
+            <li>JSON file for project data</li>
+          </ul>
+        </div>
+
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2 text-blue-800">Migration to Nuxt 3</h3>
+          <p class="text-gray-700 mb-2">
+            Refactored the entire application to use Nuxt 3 conventions:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Replaced Vue Router with file-based routing</li>
+            <li>Converted JSON data to TypeScript composables</li>
+            <li>Created layouts for consistent page structure</li>
+            <li>Implemented dedicated pages for each project</li>
+            <li>Optimized for SSR and better SEO</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">Current Architecture</h3>
+          <ul class="list-disc list-inside space-y-1 text-lg">
+            <li><code class="bg-gray-100 px-2 py-1 rounded">/pages</code> - File-based routing</li>
+            <li><code class="bg-gray-100 px-2 py-1 rounded">/components</code> - Reusable Vue components</li>
+            <li><code class="bg-gray-100 px-2 py-1 rounded">/composables</code> - Shared logic and data</li>
+            <li><code class="bg-gray-100 px-2 py-1 rounded">/layouts</code> - Page templates</li>
+            <li><code class="bg-gray-100 px-2 py-1 rounded">/assets</code> - Styles and static content</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Design Decisions</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li><strong>Composables over JSON:</strong> Type-safe data management with better IDE support</li>
+        <li><strong>Dedicated pages:</strong> Each project gets its own page for detailed content</li>
+        <li><strong>Component-driven:</strong> Reusable ProjectCard and ProjectStatus components</li>
+        <li><strong>Tailwind CSS:</strong> Utility-first CSS for rapid development</li>
+        <li><strong>Scalable structure:</strong> Easy to add new projects without code changes</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Framework & Tools</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Nuxt 3</li>
+            <li>Vue.js 3</li>
+            <li>TypeScript</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Styling</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Tailwind CSS</li>
+            <li>PostCSS</li>
+            <li>Autoprefixer</li>
+            <li>Custom CSS variables</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">What I Learned</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>Nuxt 3 architecture and conventions</li>
+        <li>Server-side rendering and static site generation</li>
+        <li>File-based routing patterns</li>
+        <li>Migrating from Vue Router to Nuxt</li>
+        <li>Composables for shared state and logic</li>
+        <li>SEO optimization techniques</li>
+        <li>TypeScript in Vue 3 projects</li>
+        <li>Component composition patterns</li>
+      </ul>
+    </section>
+
+    <div class="bg-gray-50 border-l-4 border-blue-500 p-4 mb-8">
+      <p class="text-gray-700">
+        <strong>Fun fact:</strong> This very page you're reading is part of the project being described!
+        It's a recursive portfolio that documents itself.
+      </p>
+    </div>
+
+    <div class="flex gap-4 mt-8">
+      <a
+          href="https://kruskopf.org"
+          target="_blank"
+          class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+      >
+        View Live Site
+      </a>
+      <a
+          href="https://github.com/Mattan41/kruskopf-web"
+          target="_blank"
+          class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        View on GitHub
+      </a>
+    </div>
+  </article>
+</template>
+</file>
+
+<file path="pages/index.vue">
+<template>
+  <div>
+    <!-- Hero Section -->
+    <section
+        class="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            Hi, I'm <span class="text-blue-600">Mats Kruskopf</span>
+          </h1>
+          <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            Full-Stack Developer passionate about building modern web applications
+            with Vue.js, Spring Boot, and cloud technologies.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <NuxtLink
+                to="/projects"
+                class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl"
+            >
+              View My Projects
+            </NuxtLink>
+            <NuxtLink
+                to="/about"
+                class="px-8 py-4 bg-white dark:bg-gray-800 text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors font-semibold"
+            >
+              About Me
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
+          Technologies I Work With
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
+            <div class="text-4xl mb-2">⚡</div>
+            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">Vue.js</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Modern frontend frameworks</p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
+            <div class="text-4xl mb-2">☕</div>
+            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">Java & Spring Boot</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Backend development</p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
+            <div class="text-4xl mb-2">🐳</div>
+            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">Docker & GitHub</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Containerization & deployment</p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow text-center bg-white dark:bg-gray-800">
+            <div class="text-4xl mb-2">🗄️</div>
+            <h3 class="text-center font-semibold text-gray-900 dark:text-gray-100">MySQL</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Database management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Featured Projects</h2>
+          <p class="text-gray-600 dark:text-gray-300">Check out some of my recent work</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ProjectCard
+              v-for="project in featuredProjects"
+              :key="project.slug"
+              :project="project"
+          />
+        </div>
+        <div class="text-center mt-12">
+          <NuxtLink
+              to="/projects"
+              class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors font-semibold"
+          >
+            View All Projects →
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</template>
+
+<script setup>
+const { projects } = useProjects()
+
+// Show top 3 projects
+const featuredProjects = computed(() => projects.slice(0, 3))
+</script>
+</file>
+
+<file path="jsconfig.json">
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  }
+}
+</file>
+
+<file path="nuxt.config.ts">
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  css: ['~/assets/index.css', '~/assets/main.css'],
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
+  app: {
+    head: {
+      title: 'Kruskopf Web',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ]
+    }
+  },
+
+  compatibilityDate: '2024-11-23'
+})
+</file>
+
+<file path="README.md">
+# kruskopf-web
+
+This template should help get you started developing with Vue 3 in Nuxt 3.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Nuxt 3 Documentation](https://nuxt.com/docs).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+### Compile and Hot-Reload for Development on LAN
+
+```sh
+npm run dev:lan
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+### Generate Static Site for Deployment
+
+```sh
+npm run generate
+```
+</file>
+
+<file path="composables/useProjects.ts">
+// composables/useProjects.ts
+export const useProjects = () => {
+    const projects = [
+        {
+            title: "Unseen Servant",
+            slug: "unseen-servant",
+            shortDescription: "Vue 3 + Spring Boot JPA project (private demo)",
+            tags: ["Vue.js", "Spring Boot", "MySQL", "Docker"],
+            repoLink: 'https://github.com/Mattan41/unseen-servant',
+            link: 'https://unseenservant.se',
+            category: "full-stack"
+        },
+        {
+            slug: 'kruskopf-org',
+            title: 'This Website',
+            shortDescription: 'A modern website built with Nuxt 3, showcasing my hobbies, projects and skills.',
+            tags: ['Nuxt 3', 'Vue.js'],
+            repoLink: 'https://github.com/Mattan41/kruskopf-web',
+            link: 'https://kruskopf.org',
+            status: 'ongoing',
+            category: "frontend"
+        },
+        {
+            slug: 'cinema-scala',
+            title: 'Cinema Scala',
+            shortDescription: 'A full-stack cinema booking system with Vue.js frontend and Spring Boot backend.',
+            tags: ['Vue.js', 'Spring boot', 'API', 'Gaming'],
+            repoLink: 'https://github.com/Mattan41/projekt-cinema-scala',
+            link: null,
+            status: 'academic',
+            category: "full-stack"
+        },
+        {
+            slug: '5e-encounter-builder',
+            title: '5e Encounter Builder',
+            shortDescription: 'A web application built with Vue.js. An encounter builder for RPG system 5E.',
+            tags: ['Vue.js', 'API', 'Gaming'],
+            repoLink: 'https://github.com/Mattan41/5eEncounterBuilder',
+            link: 'https://5eCombatEncounter.kruskopf.org',
+            status: 'ongoing',
+            category: "frontend"
+        },
+        {
+            slug: 'top-flicks',
+            title: 'Top Flicks',
+            shortDescription: 'A web application built with HTML, CSS, and JavaScript.',
+            tags: ['HTML', 'CSS', 'JavaScript'],
+            repoLink: 'https://github.com/Mattan41/labb-html-css-javascript',
+            link: 'https://topflicks.kruskopf.org/',
+            status: 'academic',
+            category: "frontend"
+        },
+        {
+            slug: 'chatgut-search',
+            title: 'Search Service for Chatgut',
+            shortDescription: 'A microservice for searching message content using Elasticsearch.',
+            tags: ['Java', 'Spring Boot', 'Elasticsearch', 'Kubernetes'],
+            repoLink: 'https://github.com/chatgut/searchService3',
+            link: null,
+            status: 'academic',
+            category: "backend"
+        },
+        {
+            slug: 'spring-messaging',
+            title: 'Spring Boot Messaging Application',
+            shortDescription: 'A web-based messaging platform built using Java, Spring Boot, and Thymeleaf.',
+            tags: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'HTMX'],
+            repoLink: 'https://github.com/Mattan41/springBootGroupProject',
+            link: null,
+            status: 'academic',
+            category: "full-stack"
+        },
+        {
+            slug: 'spi-unitconverter',
+            title: 'SPI Unit Converter',
+            shortDescription: 'A Java application for converting units using the Service Provider Interface (SPI) pattern.',
+            tags: ['Java', 'SPI', 'Design Patterns'],
+            repoLink: 'https://github.com/Mattan41/SPI-unitconverter',
+            link: null,
+            status: 'academic',
+            category: "backend"
+        },
+        {
+            slug: 'jakarta-wildfly',
+            title: 'Jakarta Project with WildFly',
+            shortDescription: 'RESTful Web Service Implementation with JAX-RS, Jakarta EE, and WildFly.',
+            tags: ['Java', 'Jakarta EE', 'WildFly', 'Docker', 'REST API'],
+            repoLink: 'https://github.com/Mattan41/projektJakarta',
+            link: null,
+            status: 'academic',
+            category: "backend"
+        }
+    ]
+
+    const getStatusBadge = (status: string) => {
+        switch (status) {
+            case 'academic':
+                return {
+                    text: 'Academic Project',
+                    class: 'bg-blue-100 text-blue-700 border-blue-300'
+                }
+            case 'ongoing':
+                return {
+                    text: 'Ongoing Development',
+                    class: 'bg-green-100 text-green-700 border-green-300'
+                }
+            case 'completed':
+                return {
+                    text: 'Completed',
+                    class: 'bg-gray-100 text-gray-700 border-gray-300'
+                }
+            default:
+                return {
+                    text: 'Project',
+                    class: 'bg-gray-100 text-gray-700 border-gray-300'
+                }
+        }
+    }
+
+    const getStatusDescription = (status: string) => {
+        switch (status) {
+            case 'academic':
+                return 'Built as part of my studies in software development'
+            case 'ongoing':
+                return 'Originally built during my studies, now continuing as a hobby project'
+            case 'completed':
+                return 'Completed project'
+            default:
+                return ''
+        }
+    }
+
+    return {
+        projects,
+        getProjectBySlug: (slug: string) => projects.find(p => p.slug === slug),
+        getStatusBadge,
+        getStatusDescription
+    }
+}
+</file>
+
+<file path="tailwind.config.js">
+module.exports = {
+    content: [
+        './components/**/*.{js,vue,ts}',
+        './layouts/**/*.vue',
+        './pages/**/*.vue',
+        './plugins/**/*.{js,ts}',
+        './app.vue',
+    ],
+    darkMode: 'media',
+    theme: {
+        extend: {},
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [],
+};
+</file>
+
+<file path="src/public/data.json">
+
+</file>
+
+<file path="package.json">
+{
+  "name": "kruskopf-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "dev:lan": "nuxi dev --host 0.0.0.0"
+  },
+  "dependencies": {
+    "nuxt": "^3.15.1",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+.nuxt/
+.output/
+dist/
+dist-ssr/
+coverage
+
+# Local env files
+*.local
+.env
+.env.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# Lock files
+package-lock.json
+</file>
+
+<file path="src/router/index.js">
+
+</file>
+
+</files>

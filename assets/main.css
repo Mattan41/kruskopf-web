@@ -1,63 +1,29 @@
-@import 'base.css';
-@keyframes bouncing-banner {
-  0% {
-    transform: translateX(3%);
-  }
-  50% {
-    transform: translateX(-3%);
-  }
-  100% {
-    transform: translateX(3%);
-  }
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: normal;
+  color: #3498db;
 }
 
-h1{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align:left;
-    font-style: normal;
-    color: #3498db;
-}
-
-h2{
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    text-align:left;
-    font-style: normal;
-    color: #3498db;
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: normal;
+  color: #3498db;
 }
 
 h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  text-align:left;
+  text-align: left;
   font-style: normal;
   color: #3498db;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-
 @media (hover: hover) {
   a:hover {
     background-color: hsla(191, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
