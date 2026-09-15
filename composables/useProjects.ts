@@ -122,7 +122,7 @@ export const useProjects = () => {
             case 'academic':
                 return 'Built as part of my studies in software development'
             case 'ongoing':
-                return 'Originally built during my studies, now continuing as a hobby project'
+                return 'hobby project'
             case 'completed':
                 return 'Completed project'
             default:
