@@ -23,8 +23,7 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-
-/* semantic color variables for this project */
+  /* semantic color variables for this project */
 
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
@@ -73,14 +72,14 @@ body {
     Inter,
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
