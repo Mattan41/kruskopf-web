@@ -21,6 +21,7 @@ npm install
 ```sh
 npm run dev
 ```
+
 ### Compile and Hot-Reload for Development on LAN
 
 ```sh
@@ -32,6 +33,7 @@ npm run dev:lan
 ```sh
 npm run build
 ```
+
 ### Generate Static Site for Deployment
 
 ```sh

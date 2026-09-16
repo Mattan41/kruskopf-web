@@ -5,35 +5,32 @@
         <div class="flex justify-between items-center py-4">
           <NuxtLink to="/" class="flex items-center space-x-3">
             <img
-                alt="Mats logo"
-                class="w-12 h-12 rounded-full bg-white border-2 border-blue-500"
-                src="/logo.svg"
+              alt="Mats logo"
+              class="w-12 h-12 rounded-full bg-white border-2 border-blue-500"
+              src="/logo.svg"
             />
-            <span class="text-xl font-bold text-gray-900 dark:text-gray-100 hidden sm:block">Mats Kruskopf</span>
+            <span
+              class="text-xl font-bold text-gray-900 dark:text-gray-100 hidden sm:block"
+              >Mats Kruskopf</span
+            >
           </NuxtLink>
 
           <nav class="flex space-x-1">
             <NuxtLink
-                to="/"
-                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
-                 hover:bg-blue-50 dark:hover:bg-gray-700
-                 hover:text-blue-600 transition-colors"
+              to="/"
+              class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 transition-colors"
             >
               Home
             </NuxtLink>
             <NuxtLink
-                to="/about"
-                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
-                 hover:bg-blue-50 dark:hover:bg-gray-700
-                 hover:text-blue-600 transition-colors"
+              to="/about"
+              class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 transition-colors"
             >
               About
             </NuxtLink>
             <NuxtLink
-                to="/projects"
-                class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300
-                hover:bg-blue-50 dark:hover:bg-gray-700
-                hover:text-blue-600 transition-colors"
+              to="/projects"
+              class="px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 transition-colors"
             >
               Projects
             </NuxtLink>
@@ -43,13 +40,16 @@
     </header>
 
     <main class="flex-grow">
-      <slot/>
+      <slot />
     </main>
 
     <footer class="bg-gray-50 dark:bg-gray-900 border-t mt-auto">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="text-center text-gray-600 dark:text-gray-300">
-          <p>&copy; {{ new Date().getFullYear() }} Mats Kruskopf. Built with Nuxt 3.</p>
+          <p>
+            &copy; {{ new Date().getFullYear() }} Mats Kruskopf. Built with Nuxt
+            3.
+          </p>
         </div>
       </div>
     </footer>
