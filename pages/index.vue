@@ -91,8 +91,5 @@
 </template>
 
 <script setup>
-const { projects } = useProjects()
-
-// Show top 3 projects
-const featuredProjects = computed(() => projects.slice(0, 3))
+const { featuredProjects } = useProjects()
 </script>

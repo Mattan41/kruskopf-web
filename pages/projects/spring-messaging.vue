@@ -6,6 +6,8 @@
 
     <h1 class="text-4xl font-bold mb-4">Spring Boot Messaging Application</h1>
 
+    <ProjectStatus status="academic" />
+
     <div class="flex flex-wrap gap-2 mb-6">
       <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
       <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full">Spring Boot</span>

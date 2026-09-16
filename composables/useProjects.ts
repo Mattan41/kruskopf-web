@@ -1,4 +1,6 @@
 // composables/useProjects.ts
+import { computed } from 'vue'
+
 export const useProjects = () => {
     const projects = [
         {
@@ -8,6 +10,8 @@ export const useProjects = () => {
             tags: ["Vue.js", "Spring Boot", "MySQL", "Docker"],
             repoLink: 'https://github.com/Mattan41/unseenservant-backend',
             link: 'https://unseenservant.se',
+            status: "ongoing",
+            featured: true,
             category: "full-stack"
         },
         {
@@ -18,6 +22,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/kruskopf-web',
             link: 'https://kruskopf.org',
             status: 'ongoing',
+            featured: true,
             category: "frontend"
         },
         {
@@ -28,6 +33,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/projekt-cinema-scala',
             link: null,
             status: 'academic',
+            featured: false,
             category: "full-stack"
         },
         {
@@ -38,6 +44,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/5eEncounterBuilder',
             link: 'https://5eCombatEncounter.kruskopf.org',
             status: 'ongoing',
+            featured: true,
             category: "frontend"
         },
         {
@@ -48,6 +55,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/labb-html-css-javascript',
             link: 'https://topflicks.kruskopf.org/',
             status: 'academic',
+            featured: false,
             category: "frontend"
         },
         {
@@ -58,6 +66,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/chatgut/searchService3',
             link: null,
             status: 'academic',
+            featured: false,
             category: "backend"
         },
         {
@@ -68,6 +77,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/springBootGroupProject',
             link: null,
             status: 'academic',
+            featured: false,
             category: "full-stack"
         },
         {
@@ -78,6 +88,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/SPI-unitconverter',
             link: null,
             status: 'academic',
+            featured: false,
             category: "backend"
         },
         {
@@ -88,6 +99,7 @@ export const useProjects = () => {
             repoLink: 'https://github.com/Mattan41/projektJakarta',
             link: null,
             status: 'academic',
+            featured: false,
             category: "backend"
         }
     ]
@@ -97,22 +109,22 @@ export const useProjects = () => {
             case 'academic':
                 return {
                     text: 'Academic Project',
-                    class: 'bg-blue-100 text-blue-700 border-blue-300'
+                    class: 'bg-slate-100 text-slate-600 border-slate-300 dark:bg-slate-800 dark:text-slate-400 dark:border-slate-700'
                 }
             case 'ongoing':
                 return {
                     text: 'Ongoing Development',
-                    class: 'bg-green-100 text-green-700 border-green-300'
+                    class: 'bg-emerald-100 text-emerald-700 border-emerald-300 dark:bg-emerald-900 dark:text-emerald-200 dark:border-emerald-700'
                 }
             case 'completed':
                 return {
                     text: 'Completed',
-                    class: 'bg-gray-100 text-gray-700 border-gray-300'
+                    class: 'bg-gray-100 text-gray-700 border-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700'
                 }
             default:
                 return {
                     text: 'Project',
-                    class: 'bg-gray-100 text-gray-700 border-gray-300'
+                    class: 'bg-gray-100 text-gray-700 border-gray-300 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700'
                 }
         }
     }
@@ -122,7 +134,7 @@ export const useProjects = () => {
             case 'academic':
                 return 'Built as part of my studies in software development'
             case 'ongoing':
-                return 'hobby project'
+                return 'Actively maintained personal project'
             case 'completed':
                 return 'Completed project'
             default:
@@ -130,8 +142,13 @@ export const useProjects = () => {
         }
     }
 
+    const featuredProjects = computed(() => projects.filter(p => p.featured === true))
+    const academicProjects = computed(() => projects.filter(p => p.featured === false && p.status === 'academic'))
+
     return {
         projects,
+        featuredProjects,
+        academicProjects,
         getProjectBySlug: (slug: string) => projects.find(p => p.slug === slug),
         getStatusBadge,
         getStatusDescription

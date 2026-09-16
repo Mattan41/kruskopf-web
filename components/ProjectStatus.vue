@@ -6,13 +6,16 @@
     >
       {{ badge.text }}
     </span>
-    <p class="text-sm text-gray-600 italic mt-2">
+    <!-- Only academic projects carry the educational context; the ongoing badge is self-explanatory. -->
+    <p v-if="status === 'academic'" class="text-sm text-gray-600 dark:text-gray-400 italic mt-2">
       {{ description }}
     </p>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   status: {
     type: String,

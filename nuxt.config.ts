@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-css: ['~/assets/index.css', '~/assets/base.css', '~/assets/main.css'],
+  css: ['~/assets/index.css', '~/assets/base.css', '~/assets/main.css'],
 
   postcss: {
     plugins: {
@@ -19,5 +19,6 @@ css: ['~/assets/index.css', '~/assets/base.css', '~/assets/main.css'],
     }
   },
 
-  compatibilityDate: '2024-11-23'
+  compatibilityDate: '2024-11-23',
+  modules: ['@nuxt/eslint']
 })

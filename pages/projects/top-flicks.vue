@@ -6,6 +6,8 @@
 
     <h1 class="text-4xl font-bold mb-4">Top Flicks</h1>
 
+    <ProjectStatus status="academic" />
+
     <div class="flex flex-wrap gap-2 mb-6">
       <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full">HTML</span>
       <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">CSS</span>
