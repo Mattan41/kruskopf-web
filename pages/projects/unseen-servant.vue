@@ -156,6 +156,17 @@
           Self-hosted on Linux mini-PC with ingress handled through Cloudflare
           Tunnel
         </li>
+        <li>
+          Release pipeline: a tagged GitHub release triggers GitHub Actions to
+          build and push multi-platform images to Docker Hub, which are then
+          manually pulled and redeployed on the home server
+        </li>
+        <li>
+          Cloudflare Pages preview at dev.unseenservant.se auto-builds on every
+          merge to main against the same backend — used to gather feedback from
+          colleagues interested in tabletop RPGs before changes reach my actual
+          play group's live environment
+        </li>
       </ul>
     </section>
 
@@ -281,6 +292,15 @@
       >
         Try it Live
       </a>
+
+      <a
+        href="https://dev.unseenservant.se"
+        target="_blank"
+        class="px-6 py-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-medium text-sm"
+      >
+        Dev Build (auto-deploys from main)
+      </a>
+
       <a
         href="https://github.com/Mattan41/unseenservant-backend"
         target="_blank"
