@@ -147,14 +147,10 @@
       <ul
         class="list-disc list-outside ml-5 space-y-2 text-base sm:text-lg text-gray-700 dark:text-gray-300"
       >
-        <li>
-          Automated CI/CD via GitHub Actions building and pushing multi-platform
-          images to Docker Hub
-        </li>
         <li>Container orchestration with Docker Compose</li>
         <li>
-          Self-hosted on Linux mini-PC with ingress handled through Cloudflare
-          Tunnel
+          Self-hosted on Ubuntu Server mini-PC with ingress handled through
+          Cloudflare Tunnel
         </li>
         <li>
           Release pipeline: a tagged GitHub release triggers GitHub Actions to
@@ -162,10 +158,10 @@
           manually pulled and redeployed on the home server
         </li>
         <li>
-          Cloudflare Pages preview at dev.unseenservant.se auto-builds on every
-          merge to main against the same backend — used to gather feedback from
-          colleagues interested in tabletop RPGs before changes reach my actual
-          play group's live environment
+          Cloudflare Pages auto-builds a preview on every merge to main against
+          the same backend — used to gather feedback from dev collegues
+          interested in TTRPG before changes reach my actual play group's live
+          environment
         </li>
       </ul>
     </section>
