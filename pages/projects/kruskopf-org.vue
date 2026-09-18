@@ -240,13 +240,6 @@
 
     <div class="flex gap-4 mt-8">
       <a
-        href="https://kruskopf.org"
-        target="_blank"
-        class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-      >
-        View Live Site
-      </a>
-      <a
         href="https://github.com/Mattan41/kruskopf-web"
         target="_blank"
         class="px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors"
