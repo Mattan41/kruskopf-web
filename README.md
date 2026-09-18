@@ -6,7 +6,7 @@ My personal portfolio — the projects I build and the stack I work with.
 
 ## Tech stack
 
-- Nuxt 3 (Vue 3, Composition API, file-based routing)
+- Nuxt (Vue, Composition API, file-based routing)
 - Tailwind CSS with semantic colour tokens, so light and dark mode need no
   per-component overrides
 - Fully static export — no database, API or authentication

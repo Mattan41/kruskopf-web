@@ -6,8 +6,8 @@
         management application for tabletop RPG groups playing Dungeons &
         Dragons 5e. Originally built as my graduation thesis project at
         IT-Högskolan, it is still actively maintained as a hobby project — a Vue
-        3 frontend on a modular Spring Boot REST API backed by MySQL,
-        self-hosted on a local mini-PC and exposed through a Cloudflare Tunnel.
+        frontend on a modular Spring Boot REST API backed by MySQL, self-hosted
+        on a local mini-PC and exposed through a Cloudflare Tunnel.
       </ProjectProse>
     </ProjectSection>
 
@@ -35,7 +35,7 @@
       <div class="grid md:grid-cols-3 gap-4">
         <ProjectInfoCard title="Frontend" heading-size="base">
           <ProjectList size="sm">
-            <li>Vue 3 with the Composition API</li>
+            <li>Vue with the Composition API</li>
             <li>Pinia for centralised client state</li>
             <li>Tailwind CSS and Vite</li>
             <li>Axios interceptors for JWT handling</li>
@@ -107,7 +107,7 @@
 import type { TagColor } from '~/composables/useProjects'
 
 const tags: { label: string; color: TagColor }[] = [
-  { label: 'Vue.js 3', color: 'blue' },
+  { label: 'Vue.js', color: 'blue' },
   { label: 'Spring Boot', color: 'green' },
   { label: 'MySQL', color: 'purple' },
   { label: 'OAuth2 & JWT', color: 'red' },
