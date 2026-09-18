@@ -132,5 +132,5 @@
 </template>
 
 <script setup>
-const { featuredProjects } = useProjects();
+const { featuredProjects } = useProjects()
 </script>

@@ -10,7 +10,7 @@
             alt="Mats Kruskopf"
             class="w-32 h-32 rounded-full mx-auto mb-6 border-4 shadow-lg bg-white border-gray-700 float-animation"
             src="/logo.svg"
-          >
+          />
           <h1
             class="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4"
           >

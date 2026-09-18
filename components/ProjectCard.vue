@@ -43,30 +43,30 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue'
 
 const props = defineProps({
   project: {
     type: Object,
-    required: true,
+    required: true
   },
   featured: {
     type: Boolean,
     required: false,
-    default: false,
-  },
-});
+    default: false
+  }
+})
 
 const isActive = computed(
-  () => props.featured || props.project.status === "ongoing",
-);
+  () => props.featured || props.project.status === 'ongoing'
+)
 
 // Mutually exclusive branches keep Tailwind from emitting conflicting border utilities.
 const cardBorderClass = computed(() =>
   isActive.value
-    ? "border-emerald-300 hover:border-emerald-400 dark:border-emerald-500/30 dark:hover:border-emerald-400"
-    : "border-gray-200 hover:border-blue-400 dark:border-gray-700",
-);
+    ? 'border-emerald-300 hover:border-emerald-400 dark:border-emerald-500/30 dark:hover:border-emerald-400'
+    : 'border-gray-200 hover:border-blue-400 dark:border-gray-700'
+)
 </script>
 
 <style scoped>
