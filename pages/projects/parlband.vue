@@ -52,7 +52,7 @@
       <div class="grid md:grid-cols-3 gap-4">
         <ProjectInfoCard title="Frontend Client" heading-size="base">
           <ProjectList size="sm">
-            <li>Next.js 16 App Router (static export)</li>
+            <li>Next.js App Router (static export)</li>
             <li>React &amp; TypeScript</li>
             <li>Tailwind CSS</li>
           </ProjectList>
@@ -103,9 +103,9 @@
 import type { TagColor } from '~/composables/useProjects'
 
 const tags: { label: string; color: TagColor }[] = [
-  { label: 'Next.js 16', color: 'blue' },
+  { label: 'Next.js', color: 'blue' },
   { label: 'TypeScript', color: 'blue' },
-  { label: 'Tailwind CSS v4', color: 'green' },
+  { label: 'Tailwind CSS', color: 'green' },
   { label: 'Cloudflare D1 & R2', color: 'purple' },
   { label: 'Pages Functions', color: 'orange' },
   { label: 'Zustand', color: 'yellow' }

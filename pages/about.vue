@@ -65,51 +65,176 @@
 
         <!-- Skills Grid -->
         <!-- Skills Grid (Balanserat 2x2-grid) -->
-<div class="mt-12 grid md:grid-cols-2 gap-8">
-  <!-- Frontend -->
-  <div class="bg-blue-50 dark:bg-blue-900/40 p-6 rounded-lg border border-blue-100 dark:border-blue-800">
-    <h3 class="text-xl font-bold text-foreground mb-4">Frontend</h3>
-    <ul class="space-y-2 text-foreground-muted">
-      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> Vue.js / Nuxt & React / Next.js</li>
-      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> TypeScript</li>
-      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> Tailwind CSS & Responsive Design</li>
-      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> State Management (Pinia, Zustand)</li>
-    </ul>
-  </div>
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <!-- Frontend -->
+          <div
+            class="bg-blue-50 dark:bg-blue-900/40 p-6 rounded-lg border border-blue-100 dark:border-blue-800"
+          >
+            <h3 class="text-xl font-bold text-foreground mb-4">Frontend</h3>
+            <ul class="space-y-2 text-foreground-muted">
+              <li>
+                <span
+                  class="mr-1 text-blue-600 dark:text-blue-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Vue.js / Nuxt & React / Next.js
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-blue-600 dark:text-blue-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                TypeScript
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-blue-600 dark:text-blue-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Tailwind CSS & Responsive Design
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-blue-600 dark:text-blue-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                State Management (Pinia, Zustand)
+              </li>
+            </ul>
+          </div>
 
-  <!-- Backend -->
-  <div class="bg-green-50 dark:bg-green-900/40 p-6 rounded-lg border border-green-100 dark:border-green-800">
-    <h3 class="text-xl font-bold text-foreground mb-4">Backend</h3>
-    <ul class="space-y-2 text-foreground-muted">
-      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> Java & Spring Boot</li>
-      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> RESTful APIs & Clean Architecture</li>
-      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> MySQL, SQLite & Cloudflare D1</li>
-      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> Spring Security, JWT & OAuth2</li>
-    </ul>
-  </div>
+          <!-- Backend -->
+          <div
+            class="bg-green-50 dark:bg-green-900/40 p-6 rounded-lg border border-green-100 dark:border-green-800"
+          >
+            <h3 class="text-xl font-bold text-foreground mb-4">Backend</h3>
+            <ul class="space-y-2 text-foreground-muted">
+              <li>
+                <span
+                  class="mr-1 text-green-700 dark:text-green-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Java & Spring Boot
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-green-700 dark:text-green-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                RESTful APIs & Clean Architecture
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-green-700 dark:text-green-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                MySQL, SQLite & Cloudflare D1
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-green-700 dark:text-green-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Spring Security, JWT & OAuth2
+              </li>
+            </ul>
+          </div>
 
-  <!-- DevOps & Cloud -->
-  <div class="bg-purple-50 dark:bg-purple-900/40 p-6 rounded-lg border border-purple-100 dark:border-purple-800">
-    <h3 class="text-xl font-bold text-foreground mb-4">DevOps & Infrastructure</h3>
-    <ul class="space-y-2 text-foreground-muted">
-      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Docker & Container Orchestration</li>
-      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Self-Hosting & Homelab (Ubuntu Server, Tailscale)</li>
-      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Cloudflare Edge (Workers, Pages, R2, Zero Trust)</li>
-      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Git & CI/CD Pipelines</li>
-    </ul>
-  </div>
+          <!-- DevOps & Cloud -->
+          <div
+            class="bg-purple-50 dark:bg-purple-900/40 p-6 rounded-lg border border-purple-100 dark:border-purple-800"
+          >
+            <h3 class="text-xl font-bold text-foreground mb-4">
+              DevOps & Infrastructure
+            </h3>
+            <ul class="space-y-2 text-foreground-muted">
+              <li>
+                <span
+                  class="mr-1 text-purple-700 dark:text-purple-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Docker & Container Orchestration
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-purple-700 dark:text-purple-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Self-Hosting & Homelab (Ubuntu Server, Tailscale)
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-purple-700 dark:text-purple-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Cloudflare Edge (Workers, Pages, R2, Zero Trust)
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-purple-700 dark:text-purple-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Git & CI/CD Pipelines
+              </li>
+            </ul>
+          </div>
 
-  <!-- Workflow & Methodology -->
-  <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-    <h3 class="text-xl font-bold text-foreground mb-4">Engineering Workflow</h3>
-    <ul class="space-y-2 text-foreground-muted">
-      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Spec-driven development & structured prompt engineering</li>
-      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> AI CLI workflows (Aider, Cline) for rapid prototyping & refactoring</li>
-      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Rigorous code reviews, static typing & automated linting</li>
-      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Test-focused delivery & iterative API design</li>
-    </ul>
-  </div>
-</div>
+          <!-- Workflow & Methodology -->
+          <div
+            class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700"
+          >
+            <h3 class="text-xl font-bold text-foreground mb-4">
+              Engineering Workflow
+            </h3>
+            <ul class="space-y-2 text-foreground-muted">
+              <li>
+                <span
+                  class="mr-1 text-slate-600 dark:text-slate-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Spec-driven development & structured prompt engineering
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-slate-600 dark:text-slate-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                AI CLI workflows (Aider, Cline) for rapid prototyping &
+                refactoring
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-slate-600 dark:text-slate-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Rigorous code reviews, static typing & automated linting
+              </li>
+              <li>
+                <span
+                  class="mr-1 text-slate-600 dark:text-slate-300"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Test-focused delivery & iterative API design
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <!-- Connect / CTA -->
         <div
