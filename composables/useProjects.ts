@@ -15,6 +15,27 @@ export const useProjects = () => {
       category: 'full-stack'
     },
     {
+      slug: 'parlband',
+      title: 'Pärlband',
+      shortDescription:
+        "A serverless full-stack band website — a Next.js static export with its API, database and media storage running on Cloudflare's edge.",
+      tags: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Serverless',
+        'Cloudflare Pages',
+        'Cloudflare D1',
+        'Cloudflare R2',
+        'Zustand'
+      ],
+      repoLink: 'https://github.com/Mattan41/parlband',
+      link: 'https://parlband.kruskopf.org',
+      status: 'ongoing',
+      featured: true,
+      category: 'full-stack'
+    },
+    {
       slug: 'kruskopf-org',
       title: 'This Website',
       shortDescription:
