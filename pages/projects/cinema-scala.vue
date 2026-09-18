@@ -34,7 +34,7 @@
       <div class="grid md:grid-cols-3 gap-4">
         <ProjectInfoCard title="Frontend" heading-size="base">
           <ProjectList size="sm">
-            <li>Vue.js 3 with the Composition API</li>
+            <li>Vue.js with the Composition API</li>
             <li>Vue Router for navigation</li>
             <li>RESTful API integration</li>
           </ProjectList>

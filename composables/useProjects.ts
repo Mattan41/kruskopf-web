@@ -15,9 +15,9 @@ export const useProjects = () => {
       title: 'Unseen Servant',
       slug: 'unseen-servant',
       shortDescription:
-        'A D&D 5e campaign tracker and character manager: Vue 3 front end on a Spring Boot REST API with MySQL, dual OAuth2 login and Docker deployment. My graduation thesis, still actively developed.',
+        'A D&D 5e campaign tracker and character manager: Vue front end on a Spring Boot REST API with MySQL, dual OAuth2 login and Docker deployment. My graduation thesis, still actively developed.',
       tags: [
-        'Vue.js 3',
+        'Vue.js',
         'Spring Boot',
         'MySQL',
         'OAuth2 & JWT',
@@ -38,7 +38,7 @@ export const useProjects = () => {
       tags: [
         'Next.js',
         'TypeScript',
-        'Tailwind CSS v4',
+        'Tailwind CSS',
         'Cloudflare D1 & R2',
         'Pages Functions',
         'Zustand'
@@ -53,8 +53,8 @@ export const useProjects = () => {
       slug: 'kruskopf-org',
       title: 'This Website',
       shortDescription:
-        'My portfolio, built with Nuxt 3 — file-based routing, typed composables and reusable components, migrated from a Vue 3 SPA.',
-      tags: ['Nuxt 3', 'Vue.js', 'Tailwind CSS', 'TypeScript'],
+        'My portfolio, built with Nuxt — file-based routing, typed composables and reusable components, migrated from a Vue SPA.',
+      tags: ['Nuxt', 'Vue.js', 'Tailwind CSS', 'TypeScript'],
       repoLink: 'https://github.com/Mattan41/kruskopf-web',
       link: 'https://developer.kruskopf.org',
       status: 'ongoing',
@@ -77,8 +77,8 @@ export const useProjects = () => {
       slug: '5e-encounter-builder',
       title: '5e Encounter Builder',
       shortDescription:
-        'A Vue 3 encounter builder for D&D 5e that pulls monsters from the Open5e API and keeps the combat list in local storage.',
-      tags: ['Vue.js 3', 'Open5e API', 'Local Storage'],
+        'A Vue encounter builder for D&D 5e that pulls monsters from the Open5e API and keeps the combat list in local storage.',
+      tags: ['Vue.js', 'Open5e API', 'Local Storage'],
       repoLink: 'https://github.com/Mattan41/5eEncounterBuilder',
       link: 'https://5eCombatEncounter.kruskopf.org',
       status: 'ongoing',

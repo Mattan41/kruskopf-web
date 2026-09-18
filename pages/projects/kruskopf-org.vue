@@ -3,9 +3,9 @@
     <ProjectSection title="About the Project">
       <ProjectProse>
         This site is my portfolio: a showcase for the projects I build and the
-        stack I work in. It started life as a Vue 3 + Vue Router single-page app
-        and was later migrated to Nuxt 3 for server-side rendering, better SEO
-        and file-based routing — so this very page is part of the project it
+        stack I work in. It started life as a Vue + Vue Router single-page app
+        and was later migrated to Nuxt for server-side rendering, better SEO and
+        file-based routing — so this very page is part of the project it
         describes.
       </ProjectProse>
     </ProjectSection>
@@ -36,14 +36,14 @@
       <div class="grid md:grid-cols-3 gap-4">
         <ProjectInfoCard title="Original Stack" heading-size="base">
           <ProjectList size="sm">
-            <li>Vue 3 with the Composition API</li>
+            <li>Vue with the Composition API</li>
             <li>Vue Router for manual routing</li>
             <li>Vite as build tool</li>
             <li>Project data in a JSON file</li>
           </ProjectList>
         </ProjectInfoCard>
 
-        <ProjectInfoCard title="Migration to Nuxt 3" heading-size="base">
+        <ProjectInfoCard title="Migration to Nuxt" heading-size="base">
           <ProjectList size="sm">
             <li>Vue Router replaced by file-based routing</li>
             <li>JSON data converted to typed composables</li>
@@ -84,7 +84,7 @@
 import type { TagColor } from '~/composables/useProjects'
 
 const tags: { label: string; color: TagColor }[] = [
-  { label: 'Nuxt 3', color: 'green' },
+  { label: 'Nuxt', color: 'green' },
   { label: 'Vue.js', color: 'green' },
   { label: 'Tailwind CSS', color: 'blue' },
   { label: 'TypeScript', color: 'blue' }

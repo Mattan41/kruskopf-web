@@ -3,7 +3,7 @@
     <ProjectSection title="About the Project">
       <ProjectProse>
         A web application for building combat encounters in the RPG system 5e,
-        built with Vue.js 3 and the Open5e API. Monsters can be browsed from the
+        built with Vue.js and the Open5e API. Monsters can be browsed from the
         API, added to a combat list or created from scratch, and the encounter
         is persisted in local storage. Search, filtering and a favourites list
         are planned next.
@@ -34,7 +34,7 @@
       <div class="grid md:grid-cols-2 gap-4">
         <ProjectInfoCard title="Frontend" heading-size="base">
           <ProjectList size="sm">
-            <li>Vue.js 3</li>
+            <li>Vue.js</li>
             <li>Vite dev and build tooling</li>
           </ProjectList>
         </ProjectInfoCard>
@@ -72,7 +72,7 @@
 import type { TagColor } from '~/composables/useProjects'
 
 const tags: { label: string; color: TagColor }[] = [
-  { label: 'Vue.js 3', color: 'blue' },
+  { label: 'Vue.js', color: 'blue' },
   { label: 'Open5e API', color: 'green' },
   { label: 'Local Storage', color: 'purple' }
 ]
