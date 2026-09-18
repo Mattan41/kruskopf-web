@@ -20,7 +20,7 @@
         </div>
       </section>
 
-      <hr class="border-gray-200 dark:border-gray-700 mb-16" >
+      <hr class="border-gray-200 dark:border-gray-700 mb-16" />
 
       <section>
         <h2
@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-const { featuredProjects, academicProjects } = useProjects();
+const { featuredProjects, academicProjects } = useProjects()
 </script>
 
 <style scoped>

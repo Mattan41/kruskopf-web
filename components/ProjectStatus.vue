@@ -17,19 +17,19 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue'
 
 const props = defineProps({
   status: {
     type: String,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 
-const { getStatusBadge, getStatusDescription } = useProjects();
+const { getStatusBadge, getStatusDescription } = useProjects()
 
-const badge = computed(() => getStatusBadge(props.status));
-const description = computed(() => getStatusDescription(props.status));
+const badge = computed(() => getStatusBadge(props.status))
+const description = computed(() => getStatusDescription(props.status))
 </script>
 
 <style scoped>
