@@ -1,6 +1,8 @@
 <template>
   <section class="mb-8">
-    <h2 v-if="title" class="text-2xl font-semibold mb-4">{{ title }}</h2>
+    <h2 v-if="title" class="text-2xl font-semibold mb-4 text-foreground">
+      {{ title }}
+    </h2>
     <slot />
   </section>
 </template>

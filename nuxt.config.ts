@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/index.css', '~/assets/base.css', '~/assets/main.css'],
+  css: ['~/assets/main.css'],
 
   postcss: {
     plugins: {

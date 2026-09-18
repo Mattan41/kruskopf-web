@@ -1,15 +1,17 @@
 <template>
   <article
-    class="project-detail max-w-7xl mx-auto p-4 sm:p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+    class="project-detail max-w-7xl mx-auto p-4 sm:p-8 bg-surface text-foreground"
   >
     <NuxtLink
       to="/projects"
-      class="text-blue-500 hover:underline mb-4 inline-block"
+      class="text-accent hover:underline mb-4 inline-block"
     >
       ← Back to Projects
     </NuxtLink>
 
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ title }}</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
+      {{ title }}
+    </h1>
 
     <ProjectStatus :status="status" />
 

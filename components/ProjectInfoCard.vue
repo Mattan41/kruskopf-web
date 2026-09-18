@@ -1,11 +1,6 @@
 <template>
-  <div
-    class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-  >
-    <h3
-      class="font-semibold mb-2 text-gray-800 dark:text-gray-200"
-      :class="headingClass"
-    >
+  <div class="p-4 rounded-lg bg-surface-muted border border-subtle">
+    <h3 class="font-semibold mb-2 text-foreground" :class="headingClass">
       {{ title }}
     </h3>
     <slot />

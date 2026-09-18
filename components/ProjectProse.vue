@@ -1,7 +1,5 @@
 <template>
-  <p
-    class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300"
-  >
+  <p class="text-base sm:text-lg leading-relaxed text-foreground-muted">
     <slot />
   </p>
 </template>

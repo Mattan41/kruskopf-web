@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="list-disc list-outside space-y-1 text-gray-700 dark:text-gray-300"
+    class="list-disc list-outside space-y-1 text-foreground-muted"
     :class="sizeClass"
   >
     <slot />

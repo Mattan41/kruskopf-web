@@ -28,7 +28,7 @@ const variantClass = computed(() => {
     case 'ghost':
       return 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
     case 'outline':
-      return 'border border-blue-500 text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/40'
+      return 'border border-accent text-accent hover:bg-accent-soft'
     default:
       return 'bg-green-600 text-white hover:bg-green-700'
   }

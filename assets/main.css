@@ -1,29 +1,79 @@
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  font-style: normal;
-  color: #3498db;
+@tailwind base;
+
+/*
+ * Design tokens
+ * -------------
+ * Raw RGB channels so Tailwind's <alpha-value> placeholder keeps working
+ * (bg-surface/50, text-accent/80, ...). The prefers-color-scheme block flips
+ * the same tokens for dark mode, which is why components can use a single
+ * token instead of pairing every surface/text/border colour with a `dark:`
+ * variant. See theme.extend.colors in tailwind.config.js.
+ */
+:root {
+  --accent: 37 99 235; /* blue-600 */
+  --accent-solid: 37 99 235; /* blue-600 */
+  --accent-soft: 239 246 255; /* blue-50 */
+
+  --surface: 255 255 255;
+  --surface-muted: 249 250 251; /* gray-50 */
+
+  --foreground: 17 24 39; /* gray-900 */
+  --foreground-muted: 55 65 81; /* gray-700 */
+
+  --border-subtle: 243 244 246; /* gray-100 */
 }
 
-h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  font-style: normal;
-  color: #3498db;
-}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: 96 165 250; /* blue-400 */
+    --accent-solid: 59 130 246; /* blue-500 */
+    --accent-soft: 23 37 84; /* blue-950 */
 
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  font-style: normal;
-  color: #3498db;
-}
+    --surface: 17 24 39; /* gray-900 */
+    --surface-muted: 31 41 55; /* gray-800 */
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(191, 100%, 37%, 0.2);
+    --foreground: 243 244 246; /* gray-100 */
+    --foreground-muted: 209 213 219; /* gray-300 */
+
+    --border-subtle: 31 41 55; /* gray-800 */
   }
 }
+
+/*
+ * Base element styles. Tailwind's preflight already handles margins and
+ * box-sizing, so only the project typography and page colours live here.
+ */
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: rgb(var(--surface));
+  color: rgb(var(--foreground-muted));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ * Preflight does not reset <strong> weight, but the stylesheet used to carry a
+ * universal `font-weight: normal` reset that silently neutralised every
+ * <strong> on the site.
+ */
+strong {
+  font-weight: 600;
+}
+
+@tailwind components;
+@tailwind utilities;
