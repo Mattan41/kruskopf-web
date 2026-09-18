@@ -12,8 +12,9 @@
           <p
             class="text-xl lg:text-2xl text-foreground-muted mb-8 max-w-3xl mx-auto"
           >
-            Full-Stack Developer passionate about building modern web
-            applications with Vue.js, Spring Boot, and cloud technologies.
+            Software developer, former audiologist, musician, and TTRPG
+            enthusiast. Building web applications in my spare time to support my
+            hobbies.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink

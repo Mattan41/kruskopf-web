@@ -36,7 +36,7 @@ export const useProjects = () => {
       shortDescription:
         "A serverless full-stack band website — a Next.js static export with its API, database and media storage running on Cloudflare's edge.",
       tags: [
-        'Next.js 16',
+        'Next.js',
         'TypeScript',
         'Tailwind CSS v4',
         'Cloudflare D1 & R2',
@@ -56,7 +56,7 @@ export const useProjects = () => {
         'My portfolio, built with Nuxt 3 — file-based routing, typed composables and reusable components, migrated from a Vue 3 SPA.',
       tags: ['Nuxt 3', 'Vue.js', 'Tailwind CSS', 'TypeScript'],
       repoLink: 'https://github.com/Mattan41/kruskopf-web',
-      link: 'https://kruskopf.org',
+      link: 'https://developer.kruskopf.org',
       status: 'ongoing',
       featured: true,
       category: 'frontend'
