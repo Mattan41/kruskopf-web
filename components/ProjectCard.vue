@@ -42,20 +42,23 @@
   </NuxtLink>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  project: {
-    type: Object,
-    required: true
-  },
-  featured: {
-    type: Boolean,
-    required: false,
-    default: false
-  }
-})
+const props = withDefaults(
+  defineProps<{
+    project: {
+      slug: string
+      title: string
+      shortDescription: string
+      tags: string[]
+      status: string
+      category?: string
+    }
+    featured?: boolean
+  }>(),
+  { featured: false }
+)
 
 const isActive = computed(
   () => props.featured || props.project.status === 'ongoing'

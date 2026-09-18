@@ -1,75 +1,20 @@
 <template>
-  <article
-    class="project-detail max-w-7xl mx-auto p-4 sm:p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
-  >
-    <NuxtLink
-      to="/projects"
-      class="text-blue-500 hover:underline mb-4 inline-block"
-    >
-      ← Back to Projects
-    </NuxtLink>
-
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">Pärlband</h1>
-
-    <ProjectStatus status="ongoing" />
-
-    <div class="flex flex-wrap gap-2 mb-6">
-      <span
-        class="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm"
-        >Next.js 16</span
-      >
-      <span
-        class="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm"
-        >TypeScript</span
-      >
-      <span
-        class="px-3 py-1 bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200 rounded-full text-sm"
-        >Tailwind CSS v4</span
-      >
-      <span
-        class="px-3 py-1 bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200 rounded-full text-sm"
-        >Cloudflare D1 &amp; R2</span
-      >
-      <span
-        class="px-3 py-1 bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200 rounded-full text-sm"
-        >Pages Functions</span
-      >
-      <span
-        class="px-3 py-1 bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200 rounded-full text-sm"
-        >Zustand</span
-      >
-    </div>
-
-    <!-- About Section -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-3">About the Project</h2>
-      <p
-        class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300"
-      >
+  <ProjectDetail title="Pärlband" status="ongoing" :tags="tags">
+    <ProjectSection title="About the Project">
+      <ProjectProse>
         A serverless full-stack web application built for the band Pärlband to
         manage and stream music, lyrics, and sheet music. Instead of running a
         conventional container or Node.js server, the frontend is compiled into
         a static export hosted on Cloudflare Pages, while all dynamic
         operations—relational data persistence, REST APIs, and media
         streaming—run entirely on Cloudflare's edge infrastructure.
-      </p>
-    </section>
+      </ProjectProse>
+    </ProjectSection>
 
-    <!-- Key Highlights -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+    <ProjectSection title="Key Features">
       <div class="grid md:grid-cols-2 gap-4">
-        <div
-          class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-        >
-          <h3
-            class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200"
-          >
-            Persistent Media Player
-          </h3>
-          <ul
-            class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 dark:text-gray-300"
-          >
+        <ProjectInfoCard title="Persistent Media Player">
+          <ProjectList>
             <li>
               Single audio element surviving client-side route transitions
             </li>
@@ -81,19 +26,11 @@
               Play-count analytics with debounce rules (registers after 5s
               continuous playback)
             </li>
-          </ul>
-        </div>
-        <div
-          class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-        >
-          <h3
-            class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200"
-          >
-            Edge Admin &amp; Media Pipeline
-          </h3>
-          <ul
-            class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 dark:text-gray-300"
-          >
+          </ProjectList>
+        </ProjectInfoCard>
+
+        <ProjectInfoCard title="Edge Admin &amp; Media Pipeline">
+          <ProjectList>
             <li>
               Direct binary streaming to R2 object storage via Workers to avoid
               RAM buffering
@@ -106,104 +43,71 @@
               Protected editor surface for songs, recordings, musicians, and
               credits
             </li>
-          </ul>
-        </div>
+          </ProjectList>
+        </ProjectInfoCard>
       </div>
-    </section>
+    </ProjectSection>
 
-    <!-- Technical Architecture -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">
-        Architecture &amp; Edge Infrastructure
-      </h2>
+    <ProjectSection title="Architecture &amp; Edge Infrastructure">
       <div class="grid md:grid-cols-3 gap-4">
-        <div
-          class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-        >
-          <h3
-            class="text-base font-semibold mb-2 text-gray-800 dark:text-gray-200"
-          >
-            Frontend Client
-          </h3>
-          <ul
-            class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700 dark:text-gray-300"
-          >
+        <ProjectInfoCard title="Frontend Client" heading-size="base">
+          <ProjectList size="sm">
             <li>Next.js 16 App Router (static export)</li>
             <li>React &amp; TypeScript</li>
             <li>Tailwind CSS</li>
-          </ul>
-        </div>
+          </ProjectList>
+        </ProjectInfoCard>
 
-        <div
-          class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-        >
-          <h3
-            class="text-base font-semibold mb-2 text-gray-800 dark:text-gray-200"
-          >
-            Edge Backend
-          </h3>
-          <ul
-            class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700 dark:text-gray-300"
-          >
+        <ProjectInfoCard title="Edge Backend" heading-size="base">
+          <ProjectList size="sm">
             <li>Cloudflare Pages Functions (REST API)</li>
             <li>Zero-latency cold starts with V8 isolates</li>
             <li>Stream-through payload handling</li>
-          </ul>
-        </div>
+          </ProjectList>
+        </ProjectInfoCard>
 
-        <div
-          class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800"
-        >
-          <h3
-            class="text-base font-semibold mb-2 text-gray-800 dark:text-gray-200"
-          >
-            Storage &amp; Data
-          </h3>
-          <ul
-            class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700 dark:text-gray-300"
-          >
+        <ProjectInfoCard title="Storage &amp; Data" heading-size="base">
+          <ProjectList size="sm">
             <li>D1: Relational SQLite with versioned SQL migrations</li>
             <li>R2: S3-compatible asset storage via custom CDN domain</li>
             <li>Automatic primary/fallback recording queries</li>
-          </ul>
-        </div>
+          </ProjectList>
+        </ProjectInfoCard>
       </div>
-    </section>
+    </ProjectSection>
 
-    <!-- Security Note -->
-    <section class="mb-8">
-      <div
-        class="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-lg text-sm text-gray-700 dark:text-gray-300"
-      >
-        <strong class="text-gray-900 dark:text-gray-100"
-          >Security &amp; Edge Auth:</strong
-        >
+    <ProjectSection>
+      <ProjectCallout tone="info" title="Security &amp; Edge Auth">
         Administrative interfaces (<code>/admin</code>) and write endpoints
         (<code>/api/admin/*</code>) are secured at the edge using
         <strong>Cloudflare Zero Trust (Access)</strong>, enforcing identity
         verification prior to Worker invocation.
-      </div>
-    </section>
+      </ProjectCallout>
+    </ProjectSection>
 
-    <!-- Links / CTA -->
-    <div class="flex flex-wrap gap-4 mt-8">
-      <a
-        href="https://parlband.kruskopf.org"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="px-5 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-medium text-sm sm:text-base"
-      >
+    <template #actions>
+      <ProjectActionLink href="https://parlband.kruskopf.org" variant="primary">
         Live Website ↗
-      </a>
-
-      <a
+      </ProjectActionLink>
+      <ProjectActionLink
         href="https://github.com/Mattan41/parlband"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="px-5 py-2.5 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition font-medium text-sm sm:text-base"
+        variant="secondary"
       >
         View on GitHub ↗
-      </a>
-    </div>
-  </article>
+      </ProjectActionLink>
+    </template>
+  </ProjectDetail>
 </template>
+
+<script setup lang="ts">
+import type { TagColor } from '~/composables/useProjects'
+
+const tags: { label: string; color: TagColor }[] = [
+  { label: 'Next.js 16', color: 'blue' },
+  { label: 'TypeScript', color: 'blue' },
+  { label: 'Tailwind CSS v4', color: 'green' },
+  { label: 'Cloudflare D1 & R2', color: 'purple' },
+  { label: 'Pages Functions', color: 'orange' },
+  { label: 'Zustand', color: 'yellow' }
+]
+</script>

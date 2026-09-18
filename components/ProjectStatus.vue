@@ -16,15 +16,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  status: {
-    type: String,
-    required: true
-  }
-})
+const props = defineProps<{ status: string }>()
 
 const { getStatusBadge, getStatusDescription } = useProjects()
 

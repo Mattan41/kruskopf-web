@@ -8,16 +8,15 @@
   </span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  category: {
-    type: String,
-    required: false,
-    default: ''
-  }
-})
+const props = withDefaults(
+  defineProps<{
+    category?: string
+  }>(),
+  { category: '' }
+)
 
 const label = computed(() => {
   switch (props.category) {

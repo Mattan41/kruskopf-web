@@ -1,6 +1,14 @@
 // composables/useProjects.ts
 import { computed } from 'vue'
 
+/**
+ * Colour variants offered by the project tag pills (components/ProjectTag.vue).
+ * Kept here so project pages have a single, typed source of truth for the
+ * palette instead of hand-writing Tailwind colour classes.
+ */
+export type TagColor =
+  'blue' | 'green' | 'purple' | 'orange' | 'yellow' | 'red' | 'slate'
+
 export const useProjects = () => {
   const projects = [
     {
