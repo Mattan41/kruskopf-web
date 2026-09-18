@@ -1,13 +1,11 @@
 <template>
-  <div class="projects-page p-8 bg-white dark:bg-gray-900 min-h-screen">
+  <div class="projects-page p-8 bg-surface min-h-screen">
     <div class="w-full">
       <section class="mb-16">
-        <h1
-          class="text-4xl font-bold mb-4 text-center text-gray-900 dark:text-gray-100"
-        >
+        <h1 class="text-4xl font-bold mb-4 text-center text-foreground">
           My Projects
         </h1>
-        <p class="text-center text-gray-600 dark:text-gray-300 mb-12">
+        <p class="text-center text-foreground-muted mb-12">
           Featured projects I build, run and actively maintain.
         </p>
         <div class="projects-grid">
@@ -20,15 +18,13 @@
         </div>
       </section>
 
-      <hr class="border-gray-200 dark:border-gray-700 mb-16" />
+      <hr class="border-subtle mb-16" />
 
       <section>
-        <h2
-          class="text-3xl font-bold mb-4 text-center text-slate-700 dark:text-slate-300"
-        >
+        <h2 class="text-3xl font-bold mb-4 text-center text-foreground-muted">
           Academic &amp; Educational Archive
         </h2>
-        <p class="text-center text-slate-600 dark:text-slate-400 mb-12">
+        <p class="text-center text-foreground-muted mb-12">
           Built during my studies at IT-Högskolan — kept here as an educational
           archive.
         </p>

@@ -1,85 +1,84 @@
 <template>
-  <article
-    class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+  <ProjectDetail
+    title="Spring Boot Messaging Application"
+    status="academic"
+    :tags="tags"
   >
-    <NuxtLink
-      to="/projects"
-      class="text-blue-500 hover:underline mb-4 inline-block"
-    >
-      ← Back to Projects
-    </NuxtLink>
+    <ProjectSection title="About the Project">
+      <ProjectProse>
+        A group project where we built a web-based messaging platform using
+        Java, Spring Boot and Thymeleaf. Users can create, edit and view
+        messages, with authentication, authorisation and message translation
+        built in; data lives in MySQL, and a separate branch reworks message
+        updates with HTMX.
+      </ProjectProse>
+    </ProjectSection>
 
-    <h1 class="text-4xl font-bold mb-4">Spring Boot Messaging Application</h1>
+    <ProjectSection title="Key Features">
+      <div class="grid md:grid-cols-2 gap-4">
+        <ProjectInfoCard title="Messaging">
+          <ProjectList>
+            <li>Create, edit and delete messages</li>
+            <li>User authentication and authorisation</li>
+            <li>Message translation support</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <ProjectStatus status="academic" />
+        <ProjectInfoCard title="Rendering &amp; Data">
+          <ProjectList>
+            <li>Server-side rendering with Thymeleaf</li>
+            <li>MySQL database for storage</li>
+            <li>HTMX-powered updates on a separate branch</li>
+          </ProjectList>
+        </ProjectInfoCard>
+      </div>
+    </ProjectSection>
 
-    <div class="flex flex-wrap gap-2 mb-6">
-      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
-      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full"
-        >Spring Boot</span
-      >
-      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full"
-        >Thymeleaf</span
-      >
-      <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full"
-        >MySQL</span
-      >
-      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full"
-        >HTMX</span
-      >
-    </div>
+    <ProjectSection title="Architecture">
+      <div class="grid md:grid-cols-3 gap-4">
+        <ProjectInfoCard title="Backend" heading-size="base">
+          <ProjectList size="sm">
+            <li>Java with Spring Boot</li>
+            <li>Spring Data for persistence</li>
+            <li>Spring Security for access control</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
-      <p class="text-lg leading-relaxed mb-4">
-        A group project I participated in, where we built a web-based messaging
-        platform using Java, Spring Boot, and Thymeleaf.
-      </p>
-      <p class="text-lg leading-relaxed mb-4">
-        It allows users to create, edit, and view messages. The application
-        supports user authentication and authorization, message translation, and
-        provides a user-friendly interface for managing messages.
-      </p>
-      <p class="text-lg leading-relaxed">
-        It uses a MySQL database for data storage and integrates with various
-        Spring Boot starters for functionality such as data access, security,
-        and validation. Additionally, there is a branch that updates messages
-        using HTMX.
-      </p>
-    </section>
+        <ProjectInfoCard title="View Layer" heading-size="base">
+          <ProjectList size="sm">
+            <li>Thymeleaf server-side templates</li>
+            <li>HTMX branch for partial updates</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>User authentication and authorization</li>
-        <li>Create, edit, and delete messages</li>
-        <li>Message translation support</li>
-        <li>MySQL database integration</li>
-        <li>Server-side rendering with Thymeleaf</li>
-        <li>HTMX for dynamic updates (separate branch)</li>
-      </ul>
-    </section>
+        <ProjectInfoCard title="Data" heading-size="base">
+          <ProjectList size="sm">
+            <li>MySQL database</li>
+            <li>Validation through Spring Boot starters</li>
+          </ProjectList>
+        </ProjectInfoCard>
+      </div>
+    </ProjectSection>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Java</li>
-        <li>Spring Boot (Data, Security, Validation)</li>
-        <li>Thymeleaf</li>
-        <li>MySQL</li>
-        <li>HTMX (experimental branch)</li>
-        <li>Spring Security</li>
-      </ul>
-    </section>
-
-    <div class="flex gap-4 mt-8">
-      <a
+    <template #actions>
+      <ProjectActionLink
         href="https://github.com/Mattan41/springBootGroupProject"
-        target="_blank"
-        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+        variant="secondary"
       >
-        View on GitHub
-      </a>
-    </div>
-  </article>
+        View on GitHub ↗
+      </ProjectActionLink>
+    </template>
+  </ProjectDetail>
 </template>
+
+<script setup lang="ts">
+import type { TagColor } from '~/composables/useProjects'
+
+const tags: { label: string; color: TagColor }[] = [
+  { label: 'Java', color: 'red' },
+  { label: 'Spring Boot', color: 'green' },
+  { label: 'Thymeleaf', color: 'blue' },
+  { label: 'MySQL', color: 'orange' },
+  { label: 'HTMX', color: 'purple' }
+]
+</script>

@@ -1,76 +1,76 @@
 <template>
-  <article
-    class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+  <ProjectDetail
+    title="Search Service for Chatgut"
+    status="academic"
+    :tags="tags"
   >
-    <NuxtLink
-      to="/projects"
-      class="text-blue-500 hover:underline mb-4 inline-block"
-    >
-      ← Back to Projects
-    </NuxtLink>
+    <ProjectSection title="About the Project">
+      <ProjectProse>
+        A search microservice I built in the chatgut organisation, letting users
+        search message content with Elasticsearch. The service is written in
+        Java with Spring Boot and exposes fast full-text search for the
+        messaging platform, with a separate branch demonstrating Kubernetes
+        deployment.
+      </ProjectProse>
+    </ProjectSection>
 
-    <h1 class="text-4xl font-bold mb-4">Search Service for Chatgut</h1>
-    <ProjectStatus status="academic" />
-    <div class="flex flex-wrap gap-2 mb-6">
-      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
-      <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full"
-        >Spring Boot</span
-      >
-      <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full"
-        >Elasticsearch</span
-      >
-      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full"
-        >Kubernetes</span
-      >
-    </div>
+    <ProjectSection title="Key Features">
+      <div class="grid md:grid-cols-2 gap-4">
+        <ProjectInfoCard title="Search">
+          <ProjectList>
+            <li>Full-text search over message content</li>
+            <li>RESTful API design</li>
+            <li>Integration with the messaging platform</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
-      <p class="text-lg leading-relaxed mb-4">
-        A microservice I built in the chatgut organization, enabling users to
-        search message content using Elasticsearch.
-      </p>
-      <p class="text-lg leading-relaxed mb-4">
-        The service is built with Java and Spring Boot, providing fast and
-        efficient full-text search capabilities for the messaging platform.
-      </p>
-      <p class="text-lg leading-relaxed">
-        There is also a branch where deployment is done with Kubernetes,
-        demonstrating modern cloud-native deployment practices.
-      </p>
-    </section>
+        <ProjectInfoCard title="Deployment">
+          <ProjectList>
+            <li>Independent microservice</li>
+            <li>Docker containerisation</li>
+            <li>Kubernetes manifests on a separate branch</li>
+          </ProjectList>
+        </ProjectInfoCard>
+      </div>
+    </ProjectSection>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Full-text search using Elasticsearch</li>
-        <li>RESTful API design</li>
-        <li>Microservice architecture</li>
-        <li>Kubernetes deployment option</li>
-        <li>Integration with messaging platform</li>
-      </ul>
-    </section>
+    <ProjectSection title="Architecture">
+      <div class="grid md:grid-cols-2 gap-4">
+        <ProjectInfoCard title="Service" heading-size="base">
+          <ProjectList size="sm">
+            <li>Java with Spring Boot</li>
+            <li>Elasticsearch for indexed search</li>
+            <li>RESTful API endpoints</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>Elasticsearch</li>
-        <li>Kubernetes (deployment)</li>
-        <li>Docker</li>
-      </ul>
-    </section>
+        <ProjectInfoCard title="Operations" heading-size="base">
+          <ProjectList size="sm">
+            <li>Docker image for the service</li>
+            <li>Kubernetes deployment on a dedicated branch</li>
+          </ProjectList>
+        </ProjectInfoCard>
+      </div>
+    </ProjectSection>
 
-    <div class="flex gap-4 mt-8">
-      <a
+    <template #actions>
+      <ProjectActionLink
         href="https://github.com/chatgut/searchService3"
-        target="_blank"
-        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+        variant="secondary"
       >
-        View on GitHub
-      </a>
-    </div>
-  </article>
+        View on GitHub ↗
+      </ProjectActionLink>
+    </template>
+  </ProjectDetail>
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import type { TagColor } from '~/composables/useProjects'
+
+const tags: { label: string; color: TagColor }[] = [
+  { label: 'Java', color: 'red' },
+  { label: 'Spring Boot', color: 'green' },
+  { label: 'Elasticsearch', color: 'yellow' },
+  { label: 'Kubernetes', color: 'blue' }
+]
+</script>

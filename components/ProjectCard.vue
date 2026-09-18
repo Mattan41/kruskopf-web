@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="`/projects/${project.slug}`"
-    class="project-card block p-6 rounded-lg transition-all duration-300 hover:shadow-xl border bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900"
+    class="project-card block p-6 rounded-lg transition-all duration-300 hover:shadow-xl border bg-gradient-to-br from-surface to-surface-muted"
     :class="cardBorderClass"
   >
     <div class="mb-2">
@@ -9,7 +9,7 @@
     </div>
 
     <div class="flex items-center gap-2 mb-2">
-      <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400">
+      <h3 class="text-xl font-semibold text-accent">
         {{ project.title }}
       </h3>
       <span
@@ -27,14 +27,14 @@
         Active
       </span>
     </div>
-    <p class="text-gray-600 dark:text-gray-300 mb-4">
+    <p class="text-foreground-muted mb-4">
       {{ project.shortDescription }}
     </p>
     <div class="flex flex-wrap gap-2">
       <span
         v-for="tag in project.tags"
         :key="tag"
-        class="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 text-sm rounded-full"
+        class="px-3 py-1 bg-accent-soft text-accent text-sm rounded-full"
       >
         {{ tag }}
       </span>
@@ -42,20 +42,23 @@
   </NuxtLink>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  project: {
-    type: Object,
-    required: true
-  },
-  featured: {
-    type: Boolean,
-    required: false,
-    default: false
-  }
-})
+const props = withDefaults(
+  defineProps<{
+    project: {
+      slug: string
+      title: string
+      shortDescription: string
+      tags: string[]
+      status: string
+      category?: string
+    }
+    featured?: boolean
+  }>(),
+  { featured: false }
+)
 
 const isActive = computed(
   () => props.featured || props.project.status === 'ongoing'
@@ -65,7 +68,7 @@ const isActive = computed(
 const cardBorderClass = computed(() =>
   isActive.value
     ? 'border-emerald-300 hover:border-emerald-400 dark:border-emerald-500/30 dark:hover:border-emerald-400'
-    : 'border-gray-200 hover:border-blue-400 dark:border-gray-700'
+    : 'border-subtle hover:border-accent'
 )
 </script>
 

@@ -1,15 +1,50 @@
 // composables/useProjects.ts
 import { computed } from 'vue'
 
+/**
+ * Colour variants offered by the project tag pills (components/ProjectTag.vue).
+ * Kept here so project pages have a single, typed source of truth for the
+ * palette instead of hand-writing Tailwind colour classes.
+ */
+export type TagColor =
+  'blue' | 'green' | 'purple' | 'orange' | 'yellow' | 'red' | 'slate'
+
 export const useProjects = () => {
   const projects = [
     {
       title: 'Unseen Servant',
       slug: 'unseen-servant',
-      shortDescription: 'Vue 3 + Spring Boot JPA project',
-      tags: ['Vue.js', 'Spring Boot', 'MySQL', 'Docker'],
+      shortDescription:
+        'A D&D 5e campaign tracker and character manager: Vue 3 front end on a Spring Boot REST API with MySQL, dual OAuth2 login and Docker deployment. My graduation thesis, still actively developed.',
+      tags: [
+        'Vue.js 3',
+        'Spring Boot',
+        'MySQL',
+        'OAuth2 & JWT',
+        'Docker',
+        'TTRPG / 5e'
+      ],
       repoLink: 'https://github.com/Mattan41/unseenservant-backend',
       link: 'https://unseenservant.se',
+      status: 'ongoing',
+      featured: true,
+      category: 'full-stack'
+    },
+    {
+      slug: 'parlband',
+      title: 'Pärlband',
+      shortDescription:
+        "A serverless full-stack band website — a Next.js static export with its API, database and media storage running on Cloudflare's edge.",
+      tags: [
+        'Next.js 16',
+        'TypeScript',
+        'Tailwind CSS v4',
+        'Cloudflare D1 & R2',
+        'Pages Functions',
+        'Zustand'
+      ],
+      repoLink: 'https://github.com/Mattan41/parlband',
+      link: 'https://parlband.kruskopf.org',
       status: 'ongoing',
       featured: true,
       category: 'full-stack'
@@ -18,8 +53,8 @@ export const useProjects = () => {
       slug: 'kruskopf-org',
       title: 'This Website',
       shortDescription:
-        'A modern website built with Nuxt 3, showcasing my hobbies, projects and skills.',
-      tags: ['Nuxt 3', 'Vue.js'],
+        'My portfolio, built with Nuxt 3 — file-based routing, typed composables and reusable components, migrated from a Vue 3 SPA.',
+      tags: ['Nuxt 3', 'Vue.js', 'Tailwind CSS', 'TypeScript'],
       repoLink: 'https://github.com/Mattan41/kruskopf-web',
       link: 'https://kruskopf.org',
       status: 'ongoing',
@@ -30,9 +65,9 @@ export const useProjects = () => {
       slug: 'cinema-scala',
       title: 'Cinema Scala',
       shortDescription:
-        'A full-stack cinema booking system with Vue.js frontend and Spring Boot backend.',
-      tags: ['Vue.js', 'Spring boot', 'API', 'Gaming'],
-      repoLink: 'https://github.com/Mattan41/projekt-cinema-scala',
+        'A full-stack cinema booking system: Vue.js front end on a Spring Boot API with Google OAuth2 sign-in and movie data from TMDB.',
+      tags: ['Vue.js', 'Spring Boot', 'OAuth2', 'MySQL', 'TMDB API'],
+      repoLink: 'https://github.com/Mattan41/cinema-scala',
       link: null,
       status: 'academic',
       featured: false,
@@ -42,8 +77,8 @@ export const useProjects = () => {
       slug: '5e-encounter-builder',
       title: '5e Encounter Builder',
       shortDescription:
-        'A web application built with Vue.js. An encounter builder for RPG system 5E.',
-      tags: ['Vue.js', 'API', 'Gaming'],
+        'A Vue 3 encounter builder for D&D 5e that pulls monsters from the Open5e API and keeps the combat list in local storage.',
+      tags: ['Vue.js 3', 'Open5e API', 'Local Storage'],
       repoLink: 'https://github.com/Mattan41/5eEncounterBuilder',
       link: 'https://5eCombatEncounter.kruskopf.org',
       status: 'ongoing',
@@ -54,7 +89,7 @@ export const useProjects = () => {
       slug: 'top-flicks',
       title: 'Top Flicks',
       shortDescription:
-        'A web application built with HTML, CSS, and JavaScript.',
+        'A browser-based movie app built with HTML, CSS and JavaScript — user accounts, movie search and a favourites list.',
       tags: ['HTML', 'CSS', 'JavaScript'],
       repoLink: 'https://github.com/Mattan41/labb-html-css-javascript',
       link: 'https://topflicks.kruskopf.org/',
@@ -66,7 +101,7 @@ export const useProjects = () => {
       slug: 'chatgut-search',
       title: 'Search Service for Chatgut',
       shortDescription:
-        'A microservice for searching message content using Elasticsearch.',
+        'An Elasticsearch-backed search microservice for the Chatgut messaging platform, written in Java with Spring Boot and deployable to Kubernetes.',
       tags: ['Java', 'Spring Boot', 'Elasticsearch', 'Kubernetes'],
       repoLink: 'https://github.com/chatgut/searchService3',
       link: null,
@@ -78,7 +113,7 @@ export const useProjects = () => {
       slug: 'spring-messaging',
       title: 'Spring Boot Messaging Application',
       shortDescription:
-        'A web-based messaging platform built using Java, Spring Boot, and Thymeleaf.',
+        'A server-rendered messaging platform built with Spring Boot and Thymeleaf — accounts, message editing, translation and MySQL storage.',
       tags: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'HTMX'],
       repoLink: 'https://github.com/Mattan41/springBootGroupProject',
       link: null,
@@ -90,7 +125,7 @@ export const useProjects = () => {
       slug: 'spi-unitconverter',
       title: 'SPI Unit Converter',
       shortDescription:
-        'A Java application for converting units using the Service Provider Interface (SPI) pattern.',
+        'A Java unit converter built on the Service Provider Interface pattern, with pluggable converter modules discovered via ServiceLoader.',
       tags: ['Java', 'SPI', 'Design Patterns'],
       repoLink: 'https://github.com/Mattan41/SPI-unitconverter',
       link: null,
@@ -102,7 +137,7 @@ export const useProjects = () => {
       slug: 'jakarta-wildfly',
       title: 'Jakarta Project with WildFly',
       shortDescription:
-        'RESTful Web Service Implementation with JAX-RS, Jakarta EE, and WildFly.',
+        'A Jakarta EE REST service on WildFly exposing CRUD over a movie database with JAX-RS, tested with Testcontainers and RestAssured.',
       tags: ['Java', 'Jakarta EE', 'WildFly', 'Docker', 'REST API'],
       repoLink: 'https://github.com/Mattan41/projektJakarta',
       link: null,

@@ -1,82 +1,60 @@
 <template>
-  <article
-    class="project-detail max-w-7xl mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
-  >
-    <NuxtLink
-      to="/projects"
-      class="text-blue-500 hover:underline mb-4 inline-block"
-    >
-      ← Back to Projects
-    </NuxtLink>
+  <ProjectDetail title="SPI Unit Converter" status="academic" :tags="tags">
+    <ProjectSection title="About the Project">
+      <ProjectProse>
+        A Java application built around the Service Provider Interface (SPI)
+        pattern to demonstrate modular architecture and extensible design. Users
+        select from several Converter implementations through a small
+        command-line interface, and the ServiceLoader API keeps the design open
+        for new converters.
+      </ProjectProse>
+    </ProjectSection>
 
-    <h1 class="text-4xl font-bold mb-4">SPI Unit Converter</h1>
+    <ProjectSection title="Key Features">
+      <div class="grid md:grid-cols-2 gap-4">
+        <ProjectInfoCard title="SPI Architecture">
+          <ProjectList>
+            <li>Service Provider Interface design</li>
+            <li>Pluggable converter modules</li>
+            <li>Extensible for new converters</li>
+          </ProjectList>
+        </ProjectInfoCard>
 
-    <ProjectStatus status="academic" />
+        <ProjectInfoCard title="Interface">
+          <ProjectList>
+            <li>Multiple converter implementations</li>
+            <li>Command-line input and output</li>
+            <li>ServiceLoader-based discovery</li>
+          </ProjectList>
+        </ProjectInfoCard>
+      </div>
+    </ProjectSection>
 
-    <div class="flex flex-wrap gap-2 mb-6">
-      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full">Java</span>
-      <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">SPI</span>
-      <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full"
-        >Design Patterns</span
-      >
-    </div>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
-      <p class="text-lg leading-relaxed mb-4">
-        This Java application is built with the Service Provider Interface (SPI)
-        pattern, demonstrating advanced Java design patterns and modular
-        architecture.
-      </p>
-      <p class="text-lg leading-relaxed mb-4">
-        The program allows users to select from various Converter
-        implementations to perform conversions between different units.
-      </p>
-      <p class="text-lg leading-relaxed">
-        The application includes a simple command-line interface for user input
-        and output, showcasing the flexibility and extensibility of the SPI
-        pattern.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Service Provider Interface (SPI) architecture</li>
-        <li>Multiple converter implementations</li>
-        <li>Pluggable converter modules</li>
-        <li>Command-line interface</li>
-        <li>Extensible design for adding new converters</li>
-      </ul>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Design Patterns</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
+    <ProjectSection title="Design Patterns">
+      <ProjectList>
         <li>Service Provider Interface (SPI)</li>
         <li>Strategy Pattern</li>
         <li>Factory Pattern</li>
-      </ul>
-    </section>
+      </ProjectList>
+    </ProjectSection>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Technologies Used</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Java</li>
-        <li>Java SPI</li>
-        <li>ServiceLoader API</li>
-      </ul>
-    </section>
-
-    <div class="flex gap-4 mt-8">
-      <a
+    <template #actions>
+      <ProjectActionLink
         href="https://github.com/Mattan41/SPI-unitconverter"
-        target="_blank"
-        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+        variant="secondary"
       >
-        View on GitHub
-      </a>
-    </div>
-  </article>
+        View on GitHub ↗
+      </ProjectActionLink>
+    </template>
+  </ProjectDetail>
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import type { TagColor } from '~/composables/useProjects'
+
+const tags: { label: string; color: TagColor }[] = [
+  { label: 'Java', color: 'red' },
+  { label: 'SPI', color: 'blue' },
+  { label: 'Design Patterns', color: 'purple' }
+]
+</script>

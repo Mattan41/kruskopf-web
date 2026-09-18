@@ -11,13 +11,11 @@
             class="w-32 h-32 rounded-full mx-auto mb-6 border-4 shadow-lg bg-white border-gray-700 float-animation"
             src="/logo.svg"
           />
-          <h1
-            class="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4"
-          >
+          <h1 class="text-5xl lg:text-6xl font-bold text-foreground mb-4">
             About Me
           </h1>
           <p
-            class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            class="text-xl lg:text-2xl text-foreground-muted max-w-3xl mx-auto"
           >
             Backend Developer | Musician | Hobby Tinkerer
           </p>
@@ -41,14 +39,12 @@
     </section>
 
     <!-- Main Content -->
-    <section class="py-16 bg-white dark:bg-gray-900">
+    <section class="py-16 bg-surface">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          class="prose prose-lg max-w-prose lg:max-w-none mx-auto text-gray-700 dark:text-gray-300"
+          class="prose prose-lg max-w-prose lg:max-w-none mx-auto text-foreground-muted"
         >
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-            Hello
-          </h2>
+          <h2 class="text-3xl font-bold text-foreground mb-6">Hello</h2>
 
           <p class="mb-6">
             I'm Mats Kruskopf. I came into software development after years as
@@ -61,68 +57,66 @@
               href="https://parlband.se"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+              class="text-accent font-semibold hover:underline"
               >Pärlband</a
             >.
           </p>
         </div>
 
         <!-- Skills Grid -->
-        <div class="mt-12 grid md:grid-cols-2 gap-8">
-          <div class="bg-blue-50 dark:bg-blue-900 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Frontend
-            </h3>
-            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-              <li>✓ Vue.js & Nuxt</li>
-              <li>✓ Tailwind CSS</li>
-              <li>✓ Responsive Design</li>
-            </ul>
-          </div>
+        <!-- Skills Grid (Balanserat 2x2-grid) -->
+<div class="mt-12 grid md:grid-cols-2 gap-8">
+  <!-- Frontend -->
+  <div class="bg-blue-50 dark:bg-blue-900/40 p-6 rounded-lg border border-blue-100 dark:border-blue-800">
+    <h3 class="text-xl font-bold text-foreground mb-4">Frontend</h3>
+    <ul class="space-y-2 text-foreground-muted">
+      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> Vue.js / Nuxt & React / Next.js</li>
+      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> TypeScript</li>
+      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> Tailwind CSS & Responsive Design</li>
+      <li><span class="mr-1 text-blue-600 dark:text-blue-300" aria-hidden="true">✓</span> State Management (Pinia, Zustand)</li>
+    </ul>
+  </div>
 
-          <div class="bg-green-50 dark:bg-green-900 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Backend
-            </h3>
-            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-              <li>✓ Java & Spring Boot</li>
-              <li>✓ RESTful APIs & Microservices</li>
-              <li>✓ MySQL & SQLite</li>
-              <li>✓ OAuth2 Authentication</li>
-            </ul>
-          </div>
+  <!-- Backend -->
+  <div class="bg-green-50 dark:bg-green-900/40 p-6 rounded-lg border border-green-100 dark:border-green-800">
+    <h3 class="text-xl font-bold text-foreground mb-4">Backend</h3>
+    <ul class="space-y-2 text-foreground-muted">
+      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> Java & Spring Boot</li>
+      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> RESTful APIs & Clean Architecture</li>
+      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> MySQL, SQLite & Cloudflare D1</li>
+      <li><span class="mr-1 text-green-700 dark:text-green-300" aria-hidden="true">✓</span> Spring Security, JWT & OAuth2</li>
+    </ul>
+  </div>
 
-          <div class="bg-purple-50 dark:bg-purple-900 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              DevOps & Cloud
-            </h3>
-            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-              <li>✓ Docker & Self-Hosting</li>
-              <li>✓ Cloudflare Tunnels & Edge (R2/Pages)</li>
-              <li>✓ Git & GitHub Actions CI/CD</li>
-            </ul>
-          </div>
+  <!-- DevOps & Cloud -->
+  <div class="bg-purple-50 dark:bg-purple-900/40 p-6 rounded-lg border border-purple-100 dark:border-purple-800">
+    <h3 class="text-xl font-bold text-foreground mb-4">DevOps & Infrastructure</h3>
+    <ul class="space-y-2 text-foreground-muted">
+      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Docker & Container Orchestration</li>
+      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Self-Hosting & Homelab (Ubuntu Server, Tailscale)</li>
+      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Cloudflare Edge (Workers, Pages, R2, Zero Trust)</li>
+      <li><span class="mr-1 text-purple-700 dark:text-purple-300" aria-hidden="true">✓</span> Git & CI/CD Pipelines</li>
+    </ul>
+  </div>
 
-          <div class="bg-orange-50 dark:bg-orange-900 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Other
-            </h3>
-            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-              <li>✓ Agile Development</li>
-              <li>✓ API Integration</li>
-              <li>✓ Problem Solving</li>
-            </ul>
-          </div>
-        </div>
+  <!-- Workflow & Methodology -->
+  <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+    <h3 class="text-xl font-bold text-foreground mb-4">Engineering Workflow</h3>
+    <ul class="space-y-2 text-foreground-muted">
+      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Spec-driven development & structured prompt engineering</li>
+      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> AI CLI workflows (Aider, Cline) for rapid prototyping & refactoring</li>
+      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Rigorous code reviews, static typing & automated linting</li>
+      <li><span class="mr-1 text-slate-600 dark:text-slate-300" aria-hidden="true">✓</span> Test-focused delivery & iterative API design</li>
+    </ul>
+  </div>
+</div>
 
         <!-- Connect / CTA -->
         <div
           class="mt-12 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-lg"
         >
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            Let's Connect
-          </h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
+          <h3 class="text-2xl font-bold text-foreground mb-4">Let's Connect</h3>
+          <p class="text-foreground-muted mb-6">
             Explore my projects, source code, or career background.
           </p>
           <div
@@ -130,7 +124,7 @@
           >
             <NuxtLink
               to="/projects"
-              class="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              class="w-full sm:w-auto px-6 py-3 bg-accent-solid text-white rounded-lg hover:bg-accent-solid/90 transition-colors font-semibold"
             >
               View Projects
             </NuxtLink>
