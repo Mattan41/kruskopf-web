@@ -26,6 +26,9 @@
               Play-count analytics with debounce rules (registers after 5s
               continuous playback)
             </li>
+            <li>
+              Installable as a PWA with offline app-shell caching
+            </li>
           </ProjectList>
         </ProjectInfoCard>
 
@@ -108,6 +111,7 @@ const tags: { label: string; color: TagColor }[] = [
   { label: 'Tailwind CSS', color: 'green' },
   { label: 'Cloudflare D1 & R2', color: 'purple' },
   { label: 'Pages Functions', color: 'orange' },
-  { label: 'Zustand', color: 'yellow' }
+  { label: 'Zustand', color: 'yellow' },
+  { label: 'PWA', color: 'slate' }
 ]
 </script>

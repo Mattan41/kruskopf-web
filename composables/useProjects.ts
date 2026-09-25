@@ -34,14 +34,15 @@ export const useProjects = () => {
       slug: 'parlband',
       title: 'Pärlband',
       shortDescription:
-        "A serverless full-stack band website — a Next.js static export with its API, database and media storage running on Cloudflare's edge.",
+        "A serverless full-stack band website — a Next.js static export with its API, database and media storage running on Cloudflare's edge. Installable as a PWA.",
       tags: [
         'Next.js',
         'TypeScript',
         'Tailwind CSS',
         'Cloudflare D1 & R2',
         'Pages Functions',
-        'Zustand'
+        'Zustand',
+        'PWA'
       ],
       repoLink: 'https://github.com/Mattan41/parlband',
       link: 'https://parlband.kruskopf.org',
